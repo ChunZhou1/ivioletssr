@@ -5,34 +5,12 @@ import Image from "next/image";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-const picArray = [
-  <Image
-    src={"/bannar11.jpg"}
-    key={"1"}
-    width="1000px"
-    height="250px"
-    layout="responsive"
-    alt="b1"
-  />,
-  <Image
-    src={"/bannar22.jpg"}
-    key={"2"}
-    width="1000px"
-    height="250px"
-    layout="responsive"
-    alt="b2"
-  />,
-  <Image
-    src={"/bannar33.jpg"}
-    key={"3"}
-    width="1000px"
-    height="250px"
-    layout="responsive"
-    alt="b3"
-  />,
-];
+type HeaderProps = {
+  logoSrc: string;
+  slideSrc: string[];
+};
 
-export const Header = () => {
+export const Header = ({ slideSrc, logoSrc }: HeaderProps) => {
   return (
     <>
       <Grid container alignItems="center">
@@ -42,7 +20,7 @@ export const Header = () => {
             alignItems="flex-start"
             sx={{ marginLeft: "5%" }}
           >
-            <Image src={"/logo.jpg"} width="200px" height="60px" alt="logo" />
+            <Image src={logoSrc} width="200px" height="60px" alt="logo" />
           </Stack>
         </Grid>
         <Grid item md={6} sm={12}>
@@ -56,7 +34,20 @@ export const Header = () => {
         </Grid>
       </Grid>
 
-      <Zoom scale={1.4}>{picArray}</Zoom>
+      {slideSrc && (
+        <Zoom scale={1.4}>
+          {slideSrc.map((item) => (
+            <Image
+              key={item}
+              src={item}
+              width="1000px"
+              height="250px"
+              layout="responsive"
+              alt={item}
+            />
+          ))}
+        </Zoom>
+      )}
     </>
   );
 };

@@ -6,10 +6,15 @@ import { Product } from "components/home/Product";
 import { Contact } from "components/home/Contact";
 import { Intro } from "components/home/Intro";
 
-const Home: NextPage = () => {
+type HomeProps = {
+  slideSrc: string[];
+  logoSrc: string;
+};
+
+const Home = ({ slideSrc, logoSrc }: HomeProps) => {
   return (
     <Stack direction="column" spacing={6}>
-      <Header />
+      <Header slideSrc={slideSrc} logoSrc={logoSrc} />
       <Intro />
       <Product />
       <Contact />
@@ -18,3 +23,12 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export async function getStaticProps() {
+  return {
+    props: {
+      slideSrc: ["/bannar11.jpg", "/bannar22.jpg", "/bannar33.jpg"],
+      logoSrc: "/logo.jpg",
+    },
+  };
+}
