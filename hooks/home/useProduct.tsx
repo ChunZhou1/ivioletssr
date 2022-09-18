@@ -5,15 +5,15 @@ export const useProduct = () => {
     let url = "/";
 
     switch (keyValue) {
-      case "web":
+      case "proWeb":
         url = "/Web";
         break;
 
-      case "rest":
+      case "softwareDev":
         url = "/Rest";
         break;
 
-      case "gerWeb":
+      case "comWeb":
         url = "/GerWeb";
         break;
 

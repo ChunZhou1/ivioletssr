@@ -1,9 +1,13 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
-import { intro } from "content";
 import Image from "next/image";
 
-export const Intro = () => {
+type IntroProps = {
+  intro: string;
+  pic: string;
+};
+
+export const Intro = ({ intro, pic }: IntroProps) => {
   return (
     <Stack
       direction="column"
@@ -11,7 +15,7 @@ export const Intro = () => {
       spacing={2}
       sx={{ paddingLeft: "5%", paddingRight: "5%" }}
     >
-      <Image src={"/logo.jpg"} width="200px" height="60px" alt="logo" />
+      <Image src={pic} width="200px" height="60px" alt="logo" />
       <Stack direction="row" justifyContent="flex-start">
         <Typography variant="h5">{intro}</Typography>
       </Stack>

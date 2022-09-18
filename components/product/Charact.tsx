@@ -1,10 +1,11 @@
 import React from "react";
 import { Stack, Grid, Typography } from "@mui/material";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 
 import { useIsMobile } from "hooks/common/useIsMobile";
 
 export type CharactDataType = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   content: string;
 };
@@ -34,7 +35,7 @@ export const Charact = ({ charactDataArray }: CharactType) => {
 };
 
 type CharactItemProps = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   content: string;
 };
@@ -48,7 +49,11 @@ const CharactItem = ({ icon, title, content }: CharactItemProps) => {
         sx={{ marginLeft: isMobile ? "0%" : "15%" }}
       >
         <Stack direction="row" alignItems="flex-start" spacing={2}>
-          {icon}
+          {icon ? (
+            icon
+          ) : (
+            <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />
+          )}
           <Stack direction="column" alignItems="flex-start" spacing={4}>
             <Typography
               variant="h4"

@@ -8,24 +8,20 @@ export const title2Inn =
 
 export const CharactDataForInn = [
   {
-    icon: <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />,
     title: "在您自己的网站上用户可进行订房操作，不需要向第三方平台付手续费",
     content:
       "个性化的页面提升自己物业的价值，向客户全面推介自己的物业，将用户掌握在你的手里",
   },
   {
-    icon: <MilitaryTechIcon color="secondary" sx={{ fontSize: "100px" }} />,
     title: "底层软件自主开发，彻底避免重订房(overBooking)",
     content:
       "可以和第三方channel manage无缝集成，和第三方订房平台同步时间小于三分钟，彻底避免重订房问题",
   },
   {
-    icon: <MilitaryTechIcon color="success" sx={{ fontSize: "100px" }} />,
     title: "灵活多变的促销方式，让您的物业发挥出最大的价值",
     content: "支持尾房促销，根据居住时间促销，根据空房率自动促销等多种促销方式",
   },
   {
-    icon: <MilitaryTechIcon sx={{ fontSize: "100px", color: pink[500] }} />,
     title: "支持多种付款方式，保护您的利益，减少您的工作量",
     content:
       "可以不需用户进行预授权，自动对用户信用卡进行校验但不扣款；在用户入住三天前进行自动扣款，同时实现免押金入住，极大提升用户体验，",
@@ -68,24 +64,20 @@ export const title2Rest =
 
 export const CharactDataForRest = [
   {
-    icon: <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />,
     title: "多种化的获客方式",
     content:
       "用户可通过网站点单，现场自助点单，现金点单，多种方式方便用户，提升效率",
   },
   {
-    icon: <MilitaryTechIcon color="secondary" sx={{ fontSize: "100px" }} />,
     title: "一体化的管理软件，提升效率，降低人工成本",
     content:
       "用户点单，店员制作，用户通知取货，整个过程全部自动化管理，提高效率",
   },
   {
-    icon: <MilitaryTechIcon color="success" sx={{ fontSize: "100px" }} />,
     title: "支持外卖数据导入，所有销售数据一目了然",
     content: "外卖数据和自家销售数据结合，让您对整个销售情况一目了然",
   },
   {
-    icon: <MilitaryTechIcon sx={{ fontSize: "100px", color: pink[500] }} />,
     title: "支持从底层开发，深度软件定制",
     content:
       "我们满足您的特殊要求，再也不会出现一大堆功能我不需要，我要的功能却没有",
@@ -124,23 +116,19 @@ export const title2GerWeb =
 
 export const CharactDataForGerWeb = [
   {
-    icon: <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />,
     title: "电子商务功能",
     content: "支持多种付款方式，包括微信和支付宝",
   },
   {
-    icon: <MilitaryTechIcon color="secondary" sx={{ fontSize: "100px" }} />,
     title: "为您原有的网站进行定制化的改造",
     content:
       "对原有的网站不满意？交给我们，对您的网站进行重新设计，增加您需要的功能，高度定制化是我们的优势",
   },
   {
-    icon: <MilitaryTechIcon color="success" sx={{ fontSize: "100px" }} />,
     title: "让更多人知道您的网站",
     content: "提供成熟的网站营销方案，提高您网站的曝光率",
   },
   {
-    icon: <MilitaryTechIcon sx={{ fontSize: "100px", color: pink[500] }} />,
     title: "从网站到手机APP，支持安卓和ios平台",
     content:
       "如果您需要开发手机APP，我们采用成熟的React native框架可以同时针对安卓和IOS开发，降低您的投入",
