@@ -27,13 +27,14 @@ export const Function = ({ functionDataArray }: FunctionProps) => {
           />
         </Grid>
         <Grid item sm={12} md={5}>
-          {functionDataArray.map((item) => (
-            <FunctionItem
-              key={item.title}
-              title={item.title}
-              content={item.content}
-            />
-          ))}
+          {functionDataArray &&
+            functionDataArray.map((item) => (
+              <FunctionItem
+                key={item.title}
+                title={item.title}
+                content={item.content}
+              />
+            ))}
         </Grid>
         <Grid item sm={0} md={1}></Grid>
       </Grid>

@@ -21,14 +21,15 @@ export const Charact = ({ charactDataArray }: CharactType) => {
         主要特点
       </Typography>
       <Grid container>
-        {charactDataArray.map((item) => (
-          <CharactItem
-            key={item.title}
-            icon={item.icon}
-            content={item.content}
-            title={item.title}
-          />
-        ))}
+        {charactDataArray &&
+          charactDataArray.map((item) => (
+            <CharactItem
+              key={item.title}
+              icon={item.icon}
+              content={item.content}
+              title={item.title}
+            />
+          ))}
       </Grid>
     </Stack>
   );

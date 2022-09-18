@@ -10,8 +10,8 @@ export type TitleProps = {
 export const Title = ({ title1, title2, titlePic }: TitleProps) => {
   return (
     <Grid container>
-      <Grid sm={12} md={1}></Grid>
-      <Grid sm={12} md={5}>
+      <Grid item sm={12} md={1}></Grid>
+      <Grid item sm={12} md={5}>
         <Stack direction="column" alignItems="center">
           <Stack direction="column" alignItems="flex-start" spacing={3}>
             <Typography
@@ -26,12 +26,12 @@ export const Title = ({ title1, title2, titlePic }: TitleProps) => {
           </Stack>
         </Stack>
       </Grid>
-      <Grid sm={12} md={5}>
+      <Grid item sm={12} md={5}>
         <Stack direction="column" alignItems="center">
           <Image src={titlePic} height="300px" width="400px" alt="Title" />
         </Stack>
       </Grid>
-      <Grid sm={12} md={1}></Grid>
+      <Grid item sm={12} md={1}></Grid>
     </Grid>
   );
 };
