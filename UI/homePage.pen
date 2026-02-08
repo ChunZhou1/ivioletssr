@@ -1,0 +1,1120 @@
+{
+  "version": "2.7",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "HomePage Redesign",
+      "width": 1440,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "uOvt4",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "#101D36",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            28,
+            72,
+            48,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "kqIE0",
+              "name": "Top Bar",
+              "width": "fill_container",
+              "height": 72,
+              "padding": [
+                0,
+                8
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UuIyC",
+                  "name": "brand",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "jyNJE",
+                      "name": "brandIcon",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#9AD7FF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#4F6BFF",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 44,
+                      "height": 44
+                    },
+                    {
+                      "type": "text",
+                      "id": "JhcqK",
+                      "name": "brandText",
+                      "fill": "#FFFFFF",
+                      "content": "iViolet Technology",
+                      "fontFamily": "Inter",
+                      "fontSize": 26,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sICvc",
+                  "name": "contact",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "3KG82",
+                      "name": "emailIcon",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./assets/icons/email.svg",
+                        "mode": "fit"
+                      },
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "text",
+                      "id": "pFsVE",
+                      "name": "emailText",
+                      "fill": "#E7ECF8",
+                      "content": "ivioletca@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cQ2bR",
+                      "name": "phoneIcon",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./assets/icons/phone.svg",
+                        "mode": "fit"
+                      },
+                      "width": 24,
+                      "height": 24
+                    },
+                    {
+                      "type": "text",
+                      "id": "MAgRm",
+                      "name": "phoneText",
+                      "fill": "#E7ECF8",
+                      "content": "+1 437 231 4578",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pzrz2",
+              "name": "Main Banner",
+              "clip": true,
+              "width": "fill_container",
+              "height": 430,
+              "fill": "#0B1325",
+              "cornerRadius": 28,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "q0jWK",
+                  "x": 0,
+                  "y": 0,
+                  "name": "bannerImg",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./assets/banners/banner-main.jpg",
+                    "mode": "fill"
+                  },
+                  "width": 1296,
+                  "height": 430
+                },
+                {
+                  "type": "rectangle",
+                  "id": "kpAgf",
+                  "x": 0,
+                  "y": 0,
+                  "name": "overlay",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 90,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#08101FCC",
+                        "position": 0
+                      },
+                      {
+                        "color": "#08101F66",
+                        "position": 0.5
+                      },
+                      {
+                        "color": "#08101F99",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 1296,
+                  "height": 430
+                },
+                {
+                  "type": "frame",
+                  "id": "cQD9q",
+                  "x": 56,
+                  "y": 64,
+                  "name": "heroCopy",
+                  "width": 620,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iQPQj",
+                      "name": "tagText",
+                      "fill": "#A7D4FF",
+                      "content": "专注高定制电子商务解决方案",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5gD6F",
+                      "name": "heroTitle",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 620,
+                      "content": "为旅馆与快消餐饮打造可持续增长的线上业务",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6Js82",
+                      "name": "heroDesc",
+                      "fill": "#D7E2F4",
+                      "textGrowth": "fixed-width",
+                      "width": 620,
+                      "content": "从官网订房、点单收银到营销促销，我们提供从底层开发到运营支持的一体化服务。",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DjUed",
+              "name": "Banner Thumbnails",
+              "width": "fill_container",
+              "height": 170,
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "avL2u",
+                  "name": "thumb1",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "pyx_photo",
+                    "link": "https://unsplash.com/@pyx_photo",
+                    "author": "Pyx Photography"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 170,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./assets/banners/banner-inn-v2.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 18
+                },
+                {
+                  "type": "frame",
+                  "id": "jrhQD",
+                  "name": "thumb2",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "lephotographelillois",
+                    "link": "https://unsplash.com/@lephotographelillois",
+                    "author": "Guillaume DHALLUIN"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 170,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./assets/banners/banner-cafe-v2.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 18
+                },
+                {
+                  "type": "frame",
+                  "id": "5NH1L",
+                  "name": "thumb3",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "danielkorpai",
+                    "link": "https://unsplash.com/@danielkorpai",
+                    "author": "Daniel Korpai"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 170,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./assets/banners/banner-ecommerce-v2.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d5Obz",
+          "name": "Intro Section",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 72,
+          "children": [
+            {
+              "type": "text",
+              "id": "rfboE",
+              "name": "introLabel",
+              "fill": "#4A6BFF",
+              "content": "关于我们",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "VCf4Z",
+              "name": "introTitle",
+              "fill": "#10203D",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "iViolet 公司致力于为客户提供高性价比的定制化电子商务解决方案",
+              "lineHeight": 1.24,
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "KpEAy",
+              "name": "introBody",
+              "width": "fill_container",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DZYnv",
+                  "name": "introImage",
+                  "clip": true,
+                  "width": 440,
+                  "height": 320,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./assets/services/service-web.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 24
+                },
+                {
+                  "type": "frame",
+                  "id": "R2Q1t",
+                  "name": "introPanel",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8uIQ5",
+                      "name": "introParagraph",
+                      "fill": "#344563",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "iViolet公司成立于2017年，从成立开始，公司致力于为客户提供成熟的电子商务解决方案。公司主要业务为各种类型的电子商务型网站、手机App开发，尤其擅长旅馆业和奶茶咖啡等快消行业的定制系统。我们坚持底层自主开发，避免模板化限制，为每个客户提供真正契合业务的解决方案。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k5lvq",
+                      "name": "tagsRow",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "GW5cw",
+                          "name": "tag1",
+                          "width": "fill_container",
+                          "fill": "#EEF3FF",
+                          "cornerRadius": 999,
+                          "gap": 10,
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "HlxW1",
+                              "name": "tag1Icon",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "./assets/icons/hotel.svg",
+                                "mode": "fit"
+                              },
+                              "width": 22,
+                              "height": 22
+                            },
+                            {
+                              "type": "text",
+                              "id": "CrWr8",
+                              "name": "tag1Text",
+                              "fill": "#14223F",
+                              "content": "旅馆业订房系统",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dE7LI",
+                          "name": "tag2",
+                          "width": "fill_container",
+                          "fill": "#EEF3FF",
+                          "cornerRadius": 999,
+                          "gap": 10,
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "qJYD2",
+                              "name": "tag2Icon",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "./assets/icons/coffee.svg",
+                                "mode": "fit"
+                              },
+                              "width": 22,
+                              "height": 22
+                            },
+                            {
+                              "type": "text",
+                              "id": "4Rpz6",
+                              "name": "tag2Text",
+                              "fill": "#14223F",
+                              "content": "餐饮点单与POS",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qFspy",
+                          "name": "tag3",
+                          "width": "fill_container",
+                          "fill": "#EEF3FF",
+                          "cornerRadius": 999,
+                          "gap": 10,
+                          "padding": [
+                            10,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "k0t8f",
+                              "name": "tag3Icon",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "./assets/icons/ecommerce.svg",
+                                "mode": "fit"
+                              },
+                              "width": 22,
+                              "height": 22
+                            },
+                            {
+                              "type": "text",
+                              "id": "SD3jc",
+                              "name": "tag3Text",
+                              "fill": "#14223F",
+                              "content": "电商网站与App",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ORnxk",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "#F3F6FC",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            68,
+            72,
+            88,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "cQfUa",
+              "name": "serviceLabel",
+              "fill": "#3F62FF",
+              "content": "我们的服务",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Ow1MA",
+              "name": "serviceTitle",
+              "fill": "#10203D",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "我们能够提供的服务",
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "pdxHN",
+              "name": "serviceGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L2ZMz",
+                  "name": "cardInn",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 22,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#11265514",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WPrt7",
+                      "name": "cardInnImg",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "amuzenhardt",
+                        "link": "https://unsplash.com/@amuzenhardt",
+                        "author": "Alex Muzenhardt"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 220,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1765305596432-5fdc41b64d8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzA1ODc1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 14
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3oBm1",
+                      "name": "cardInnTitleRow",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "KD9h9",
+                          "name": "cardInnIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/hotel.svg",
+                            "mode": "fit"
+                          },
+                          "width": 26,
+                          "height": 26
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ztmys",
+                          "name": "cardInnTitle",
+                          "fill": "#142446",
+                          "content": "旅馆业解决方案",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "WBSn9",
+                      "name": "cardInnDesc",
+                      "fill": "#3E4D69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "专业化的网站设计，特别针对旅馆业(inn)以及奶茶咖啡等快消餐饮业具备完善的解决方案。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lCd5o",
+                  "name": "cardRest",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 22,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#11265514",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "a3Wez",
+                      "name": "cardRestImg",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "yulokchan",
+                        "link": "https://unsplash.com/@yulokchan",
+                        "author": "Joseph Chan"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 220,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1556795573-1f36b83594f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzA1ODc1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 14
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eZWbB",
+                      "name": "cardRestTitleRow",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "jIXNY",
+                          "name": "cardRestIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/coffee.svg",
+                            "mode": "fit"
+                          },
+                          "width": 26,
+                          "height": 26
+                        },
+                        {
+                          "type": "text",
+                          "id": "iiEvK",
+                          "name": "cardRestTitle",
+                          "fill": "#142446",
+                          "content": "餐饮软件开发",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "RcxeJ",
+                      "name": "cardRestDesc",
+                      "fill": "#3E4D69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "定制化的软件开发，特别是针对各种类型的电子商务软件（餐饮、小型超市）的定制化开发。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r6POO",
+                  "name": "cardWeb",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 22,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#11265514",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l0Jt4",
+                      "name": "cardWebImg",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "haky",
+                        "link": "https://unsplash.com/@haky",
+                        "author": "Shamin Haky"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 220,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1632910605645-7a2e40713db1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzA1ODc1ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 14
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DH437",
+                      "name": "cardWebTitleRow",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "AREke",
+                          "name": "cardWebIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/ecommerce.svg",
+                            "mode": "fit"
+                          },
+                          "width": 26,
+                          "height": 26
+                        },
+                        {
+                          "type": "text",
+                          "id": "phAvK",
+                          "name": "cardWebTitle",
+                          "fill": "#142446",
+                          "content": "网站与 App 开发",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "TdRQl",
+                      "name": "cardWebDesc",
+                      "fill": "#3E4D69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "普通网站和手机App开发，包括展示型网站以及普通网站增加付款等电子商务功能。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7ILGh",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "fill": "#0D1C36",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            72,
+            72,
+            88,
+            72
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "IB34D",
+              "name": "contactLabel",
+              "fill": "#8DB3FF",
+              "content": "联系我们",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "YbEzp",
+              "name": "contactTitle",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "iViolet Technology Inc.",
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "cOngS",
+              "name": "contactDesc",
+              "fill": "#C9D5EA",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "如果你希望用更低成本建立稳定的线上业务系统，我们可以根据你的行业场景给出落地方案。",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "RO0Wm",
+              "name": "contactBody",
+              "width": "fill_container",
+              "gap": 30,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8J8W5",
+                  "name": "infoCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "o5NtO",
+                      "name": "addrRow",
+                      "width": "fill_container",
+                      "fill": "#11284A",
+                      "cornerRadius": 14,
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "PLH4X",
+                          "name": "addrIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/location.svg",
+                            "mode": "fit"
+                          },
+                          "width": 24,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "k9fFt",
+                          "name": "addrText",
+                          "fill": "#F3F7FF",
+                          "content": "Address: 29 Singer Court, Toronto",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BJzed",
+                      "name": "emailRow",
+                      "width": "fill_container",
+                      "fill": "#11284A",
+                      "cornerRadius": 14,
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "Q3YA9",
+                          "name": "emailIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/email.svg",
+                            "mode": "fit"
+                          },
+                          "width": 24,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "Dw44x",
+                          "name": "emailText",
+                          "fill": "#F3F7FF",
+                          "content": "Email: ivioletca@gmail.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OnKDy",
+                      "name": "phoneRow",
+                      "width": "fill_container",
+                      "fill": "#11284A",
+                      "cornerRadius": 14,
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "3OBWy",
+                          "name": "phoneRowIcon",
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./assets/icons/phone.svg",
+                            "mode": "fit"
+                          },
+                          "width": 24,
+                          "height": 24
+                        },
+                        {
+                          "type": "text",
+                          "id": "7bMMC",
+                          "name": "phoneRowText",
+                          "fill": "#F3F7FF",
+                          "content": "Tel: +1 437 231 4578",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bEXFS",
+                  "name": "rightCard",
+                  "width": 430,
+                  "fill": "#13315A",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "q7ojw",
+                      "name": "rightImg",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 122,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./assets/banners/banner-cafe-v2.jpg",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 12
+                    },
+                    {
+                      "type": "text",
+                      "id": "5Zt0g",
+                      "name": "rightTitle",
+                      "fill": "#FFFFFF",
+                      "content": "预约 30 分钟方案沟通",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GuIdO",
+                      "name": "rightSub",
+                      "fill": "#D8E4F8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "告诉我们你的业务和目标，我们会在沟通后给出可执行的功能与排期建议。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nv5Ig",
+                      "name": "cta",
+                      "fill": "#5B7CFF",
+                      "cornerRadius": 999,
+                      "padding": [
+                        10,
+                        18
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gqEXG",
+                          "name": "ctaText",
+                          "fill": "#FFFFFF",
+                          "content": "立即咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
