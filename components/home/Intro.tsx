@@ -1,69 +1,72 @@
-import React from "react";
+"use client";
+
 import HotelRoundedIcon from "@mui/icons-material/HotelRounded";
 import LocalCafeRoundedIcon from "@mui/icons-material/LocalCafeRounded";
 import ShoppingBagRoundedIcon from "@mui/icons-material/ShoppingBagRounded";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import Link from "next/link";
-import styles from "components/home/HomePage.module.css";
-
-export type IntroPill = {
-  icon: "hotel" | "coffee" | "shopping";
-  label: string;
-  href: string;
-};
+import NextLink from "next/link";
+import React from "react";
+import { introContent, type IntroPill } from "components/home/constant";
+import { introSx, sharedSx } from "components/home/styles";
 
 type IntroProps = {
   intro: string;
-  imageSrc: string;
   pills: IntroPill[];
 };
 
 const renderPillIcon = (icon: IntroPill["icon"]) => {
   switch (icon) {
     case "hotel":
-      return <HotelRoundedIcon className={styles.pillIcon} />;
+      return <HotelRoundedIcon sx={introSx.pillIcon} />;
     case "coffee":
-      return <LocalCafeRoundedIcon className={styles.pillIcon} />;
+      return <LocalCafeRoundedIcon sx={introSx.pillIcon} />;
     case "shopping":
-      return <ShoppingBagRoundedIcon className={styles.pillIcon} />;
+      return <ShoppingBagRoundedIcon sx={introSx.pillIcon} />;
     default:
-      return <ShoppingBagRoundedIcon className={styles.pillIcon} />;
+      return <ShoppingBagRoundedIcon sx={introSx.pillIcon} />;
   }
 };
 
-export const Intro = ({ intro, imageSrc, pills }: IntroProps) => {
-  return (
-    <section className={styles.introSection}>
-      <div className={styles.sectionInner}>
-        <p className={styles.sectionEyebrow}>关于我们</p>
-        <h2 className={styles.sectionTitle}>
-          iViolet 公司致力于为客户提供高性价比的定制化电子商务解决方案
-        </h2>
+export const Intro = ({ intro, pills }: IntroProps) => (
+  <Box component="section" sx={introSx.section}>
+    <Box sx={sharedSx.sectionInner}>
+      <Typography sx={sharedSx.sectionEyebrow}>{introContent.eyebrow}</Typography>
+      <Typography component="h2" sx={sharedSx.sectionTitle}>
+        {introContent.title}
+      </Typography>
 
-        <div className={styles.introBody}>
-          <div className={styles.introImageCard}>
-            <Image
-              src={imageSrc}
-              alt="iViolet team introduction"
-              fill
-              className={styles.introImage}
-              sizes="(max-width: 900px) 100vw, 440px"
-            />
-          </div>
+      <Box sx={introSx.body}>
+        <Box sx={introSx.imageCard}>
+          <Image
+            src={introContent.imageSrc}
+            alt="iViolet team introduction"
+            fill
+            sizes="(max-width: 900px) 100vw, 440px"
+            style={introSx.image as React.CSSProperties}
+          />
+        </Box>
 
-          <div>
-            <p className={styles.introCopy}>{intro}</p>
-            <div className={styles.introPills}>
-              {pills.map((item) => (
-                <Link key={item.label} href={item.href} className={styles.introPillLink}>
-                  {renderPillIcon(item.icon)}
-                  <span>{item.label}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+        <Box>
+          <Typography sx={introSx.copy}>{intro}</Typography>
+          <Box sx={introSx.pillsRow}>
+            {pills.map((item) => (
+              <Link
+                component={NextLink}
+                key={item.label}
+                href={item.href}
+                underline="none"
+                sx={introSx.pillLink}
+              >
+                {renderPillIcon(item.icon)}
+                <span>{item.label}</span>
+              </Link>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+);

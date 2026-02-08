@@ -1,73 +1,78 @@
+"use client";
+
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import HotelRoundedIcon from "@mui/icons-material/HotelRounded";
 import LocalCafeRoundedIcon from "@mui/icons-material/LocalCafeRounded";
 import ShoppingBagRoundedIcon from "@mui/icons-material/ShoppingBagRounded";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import Link from "next/link";
+import NextLink from "next/link";
 import React from "react";
-import styles from "components/home/HomePage.module.css";
-
-export type ProductSingle = {
-  keyValue: string;
-  title: string;
-  description: string;
-  href: string;
-  icon: "hotel" | "coffee" | "shopping";
-  imgSrc: string;
-};
+import { serviceContent, type HomeProduct } from "components/home/constant";
+import { productSx, sharedSx } from "components/home/styles";
 
 type ProductProps = {
-  products: ProductSingle[];
+  products: HomeProduct[];
 };
 
-const renderServiceIcon = (icon: ProductSingle["icon"]) => {
+const renderServiceIcon = (icon: HomeProduct["icon"]) => {
   switch (icon) {
     case "hotel":
-      return <HotelRoundedIcon className={styles.serviceTitleIcon} />;
+      return <HotelRoundedIcon sx={productSx.titleIcon} />;
     case "coffee":
-      return <LocalCafeRoundedIcon className={styles.serviceTitleIcon} />;
+      return <LocalCafeRoundedIcon sx={productSx.titleIcon} />;
     case "shopping":
-      return <ShoppingBagRoundedIcon className={styles.serviceTitleIcon} />;
+      return <ShoppingBagRoundedIcon sx={productSx.titleIcon} />;
     default:
-      return <ShoppingBagRoundedIcon className={styles.serviceTitleIcon} />;
+      return <ShoppingBagRoundedIcon sx={productSx.titleIcon} />;
   }
 };
 
-export const Product = ({ products }: ProductProps) => {
-  return (
-    <section className={styles.servicesSection}>
-      <div className={styles.sectionInner}>
-        <p className={styles.sectionEyebrow}>我们的服务</p>
-        <h2 className={styles.sectionTitle}>我们能够提供的服务</h2>
+export const Product = ({ products }: ProductProps) => (
+  <Box component="section" sx={productSx.section}>
+    <Box sx={sharedSx.sectionInner}>
+      <Typography sx={sharedSx.sectionEyebrow}>{serviceContent.eyebrow}</Typography>
+      <Typography component="h2" sx={sharedSx.sectionTitle}>
+        {serviceContent.title}
+      </Typography>
 
-        <div className={styles.serviceGrid}>
-          {products.map((item) => (
-            <article key={item.keyValue} className={styles.serviceCard}>
-              <div className={styles.serviceImageCard}>
-                <Image
-                  src={item.imgSrc}
-                  alt={item.title}
-                  fill
-                  className={styles.serviceImage}
-                  sizes="(max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
+      <Box sx={productSx.grid}>
+        {products.map((item) => (
+          <Box component="article" key={item.keyValue} sx={productSx.card}>
+            <Box sx={productSx.imageCard}>
+              <Image
+                src={item.imgSrc}
+                alt={item.title}
+                fill
+                sizes="(max-width: 1200px) 50vw, 33vw"
+                style={productSx.image as React.CSSProperties}
+              />
+            </Box>
 
-              <div className={styles.serviceTitleRow}>
-                {renderServiceIcon(item.icon)}
-                <h3 className={styles.serviceTitle}>{item.title}</h3>
-              </div>
+            <Stack sx={productSx.titleRow}>
+              {renderServiceIcon(item.icon)}
+              <Typography component="h3" sx={productSx.title}>
+                {item.title}
+              </Typography>
+            </Stack>
 
-              <p className={styles.serviceDesc}>{item.description}</p>
+            <Typography sx={productSx.desc}>{item.description}</Typography>
 
-              <Link href={item.href} className={styles.cardButton}>
-                <span>详细了解</span>
-                <ArrowForwardRoundedIcon className={styles.cardButtonIcon} />
-              </Link>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+            <Link
+              component={NextLink}
+              href={item.href}
+              underline="none"
+              sx={productSx.cardButton}
+            >
+              <span>详细了解</span>
+              <ArrowForwardRoundedIcon sx={productSx.cardButtonIcon} />
+            </Link>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+);

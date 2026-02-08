@@ -1,77 +1,83 @@
+"use client";
+
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
-import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import React from "react";
-import styles from "components/home/HomePage.module.css";
+import { heroContent, type HomeThumbnail } from "components/home/constant";
+import { headerSx, sharedSx } from "components/home/styles";
 
 type HeaderProps = {
   mainBannerSrc: string;
-  thumbnails: {
-    src: string;
-    alt: string;
-  }[];
+  thumbnails: HomeThumbnail[];
 };
 
-export const Header = ({ thumbnails, mainBannerSrc }: HeaderProps) => {
-  return (
-    <header className={styles.heroSection}>
-      <div className={styles.sectionInner}>
-        <div className={styles.topBar}>
-          <div className={styles.brandGroup}>
-            <span className={styles.logoBadge}>
-              <span className={styles.logoDot} />
-              <span className={styles.logoWord}>IV</span>
-              <AutoAwesomeRoundedIcon className={styles.logoSpark} />
-            </span>
-            <span className={styles.brandText}>iViolet Technology</span>
-          </div>
+export const Header = ({ thumbnails, mainBannerSrc }: HeaderProps) => (
+  <Box component="section" sx={headerSx.section}>
+    <Box sx={sharedSx.sectionInner}>
+      <Stack sx={headerSx.topBar}>
+        <Stack sx={headerSx.brandGroup}>
+          <Box sx={headerSx.logoBadge}>
+            <Box sx={headerSx.logoDot} />
+            <Typography component="span" sx={headerSx.logoWord}>
+              IV
+            </Typography>
+            <AutoAwesomeRoundedIcon sx={headerSx.logoSpark} />
+          </Box>
+          <Typography component="span" sx={headerSx.brandText}>
+            iViolet Technology
+          </Typography>
+        </Stack>
 
-          <div className={styles.topContacts}>
-            <a className={styles.topContactLink} href="mailto:ivioletca@gmail.com">
-              <MailOutlineRoundedIcon className={styles.topIcon} />
-              <span>ivioletca@gmail.com</span>
-            </a>
-            <a className={styles.topContactLink} href="tel:+14372314578">
-              <LocalPhoneOutlinedIcon className={styles.topIcon} />
-              <span>+1 437 231 4578</span>
-            </a>
-          </div>
-        </div>
+        <Box sx={headerSx.topContacts}>
+          <Link href="mailto:ivioletca@gmail.com" sx={headerSx.topContactLink}>
+            <MailOutlineRoundedIcon sx={headerSx.topIcon} />
+            <span>ivioletca@gmail.com</span>
+          </Link>
+          <Link href="tel:+14372314578" sx={headerSx.topContactLink}>
+            <LocalPhoneOutlinedIcon sx={headerSx.topIcon} />
+            <span>+1 437 231 4578</span>
+          </Link>
+        </Box>
+      </Stack>
 
-        <div className={styles.bannerCard}>
-          <Image
-            src={mainBannerSrc}
-            alt="iViolet hero banner"
-            fill
-            priority
-            className={styles.bannerImage}
-            sizes="(max-width: 900px) 100vw, 1296px"
-          />
-          <div className={styles.bannerOverlay} />
-          <div className={styles.bannerCopy}>
-            <p className={styles.heroTag}>专注高定制电子商务解决方案</p>
-            <h1 className={styles.heroTitle}>为旅馆与快消餐饮打造可持续增长的线上业务</h1>
-            <p className={styles.heroDesc}>
-              从官网订房、点单收银到营销促销，我们提供从底层开发到运营支持的一体化服务。
-            </p>
-          </div>
-        </div>
+      <Box sx={headerSx.bannerCard}>
+        <Image
+          src={mainBannerSrc}
+          alt="iViolet hero banner"
+          fill
+          priority
+          sizes="(max-width: 900px) 100vw, 1296px"
+          style={headerSx.bannerImage as React.CSSProperties}
+        />
+        <Box sx={headerSx.bannerOverlay} />
+        <Box sx={headerSx.bannerCopy}>
+          <Typography sx={headerSx.heroTag}>{heroContent.tag}</Typography>
+          <Typography component="h1" sx={headerSx.heroTitle}>
+            {heroContent.title}
+          </Typography>
+          <Typography sx={headerSx.heroDesc}>{heroContent.description}</Typography>
+        </Box>
+      </Box>
 
-        <div className={styles.thumbnailRow}>
-          {thumbnails.map((item) => (
-            <div className={styles.thumbnailItem} key={item.src}>
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                className={styles.thumbnailImage}
-                sizes="(max-width: 900px) 100vw, 420px"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </header>
-  );
-};
+      <Box sx={headerSx.thumbnailRow}>
+        {thumbnails.map((item) => (
+          <Box key={item.src} sx={headerSx.thumbnailItem}>
+            <Image
+              src={item.src}
+              alt={item.alt}
+              fill
+              sizes="(max-width: 900px) 100vw, 420px"
+              style={headerSx.thumbnailImage as React.CSSProperties}
+            />
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+);
