@@ -9,7 +9,7 @@ type HeaderProps = {
 export const Header = ({ headerPic }: HeaderProps) => {
   return (
     <Stack direction="column" spacing={6} sx={{ width: "100%" }}>
-      <Image src={headerPic} height="300px" width="400px" alt="headerImg" />
+      <Image src={headerPic} height={300} width={400} alt="headerImg" />
     </Stack>
   );
 };

@@ -1,4 +1,6 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { useRouter } from "next/navigation";
 export const useProduct = () => {
   const router = useRouter();
   const handleCallBackForProduct = (keyValue: string) => {

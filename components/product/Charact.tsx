@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { Stack, Grid, Typography } from "@mui/material";
+import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 
 import { useIsMobile } from "hooks/common/useIsMobile";

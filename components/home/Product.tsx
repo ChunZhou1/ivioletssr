@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { Stack, Grid, Typography, Link } from "@mui/material";
+import { Stack, GridLegacy as Grid, Typography, Link } from "@mui/material";
 import Image from "next/image";
 
 import { useProduct } from "hooks/home/useProduct";
@@ -59,7 +61,7 @@ const ProductItem = ({
       <Grid item sm={12} md={1}></Grid>
       <Grid item sm={12} md={5}>
         <Stack direction="column" alignItems="center">
-          <Image src={imgSrc} width="400px" height="250px" alt={imgSrc} />
+          <Image src={imgSrc} width={400} height={250} alt={imgSrc} />
         </Stack>
       </Grid>
       <Grid item sm={12} md={5}>

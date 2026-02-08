@@ -1,3 +1,5 @@
+"use client";
+
 import { Breakpoint, useMediaQuery, useTheme } from "@mui/material";
 
 export const useIsDownBreakpoint = (key: number | Breakpoint) => {

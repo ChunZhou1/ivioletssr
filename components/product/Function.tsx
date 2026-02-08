@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Grid, Typography } from "@mui/material";
+import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
 import Image from "next/image";
 export type FunctionDataType = {
   title: string;
@@ -21,8 +21,8 @@ export const Function = ({ functionDataArray }: FunctionProps) => {
         <Grid item sm={12} md={5}>
           <Image
             src={"/inn2.jpg"}
-            height="300px"
-            width="400px"
+            height={300}
+            width={400}
             alt="inn2.jpg"
           />
         </Grid>

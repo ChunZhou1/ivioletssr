@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Box, Stack, Link } from "@mui/material";
 import { Header } from "./Header";
@@ -9,7 +11,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { CharactDataType } from "./Charact";
 import { FunctionDataType } from "./Function";
 
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 type ProductContentProps = {
   title1: string;
@@ -43,7 +45,10 @@ export const ProductContent = ({
           color={"0345fc"}
           underline="none"
           href="##"
-          onClick={() => router.push("/")}
+          onClick={(event) => {
+            event.preventDefault();
+            router.push("/");
+          }}
         >
           返回
         </Link>

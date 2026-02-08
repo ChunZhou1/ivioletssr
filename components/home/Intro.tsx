@@ -15,7 +15,7 @@ export const Intro = ({ intro, pic }: IntroProps) => {
       spacing={2}
       sx={{ paddingLeft: "5%", paddingRight: "5%" }}
     >
-      <Image src={pic} width="200px" height="60px" alt="logo" />
+      <Image src={pic} width={200} height={60} alt="logo" />
       <Stack direction="row" justifyContent="flex-start">
         <Typography variant="h5">{intro}</Typography>
       </Stack>

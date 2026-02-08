@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Grid, Typography } from "@mui/material";
+import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 export type TitleProps = {
@@ -28,7 +28,7 @@ export const Title = ({ title1, title2, titlePic }: TitleProps) => {
       </Grid>
       <Grid item sm={12} md={5}>
         <Stack direction="column" alignItems="center">
-          <Image src={titlePic} height="300px" width="400px" alt="Title" />
+          <Image src={titlePic} height={300} width={400} alt="Title" />
         </Stack>
       </Grid>
       <Grid item sm={12} md={1}></Grid>
