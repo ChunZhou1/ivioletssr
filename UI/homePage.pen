@@ -8,7 +8,7 @@
       "y": 0,
       "name": "HomePage Redesign",
       "width": 1440,
-      "fill": "#F4F7FB",
+      "fill": "#070F1F",
       "layout": "vertical",
       "children": [
         {
@@ -16,7 +16,7 @@
           "id": "uOvt4",
           "name": "Hero Section",
           "width": "fill_container",
-          "fill": "#101D36",
+          "fill": "#0A1630",
           "layout": "vertical",
           "gap": 24,
           "padding": [
@@ -47,9 +47,11 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "ellipse",
-                      "id": "jyNJE",
-                      "name": "brandIcon",
+                      "type": "frame",
+                      "id": "sDLHy",
+                      "name": "logo",
+                      "width": 44,
+                      "height": 44,
                       "fill": {
                         "type": "gradient",
                         "gradientType": "linear",
@@ -60,17 +62,57 @@
                         },
                         "colors": [
                           {
-                            "color": "#9AD7FF",
+                            "color": "#89B7FF",
                             "position": 0
                           },
                           {
-                            "color": "#4F6BFF",
+                            "color": "#2E5CE6",
                             "position": 1
                           }
                         ]
                       },
-                      "width": 44,
-                      "height": 44
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#C6DAFF88"
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "HaKVx",
+                          "x": 5,
+                          "y": 5,
+                          "name": "logoDot",
+                          "fill": "#FFFFFF55",
+                          "width": 10,
+                          "height": 10
+                        },
+                        {
+                          "type": "text",
+                          "id": "1iTEv",
+                          "x": 9,
+                          "y": 8,
+                          "name": "logoText",
+                          "fill": "#FFFFFF",
+                          "content": "IV",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "u3qtQ",
+                          "x": 29,
+                          "y": 6,
+                          "name": "logoSpark",
+                          "width": 10,
+                          "height": 10,
+                          "iconFontName": "sparkles",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DCE8FF"
+                        }
+                      ]
                     },
                     {
                       "type": "text",
@@ -92,17 +134,14 @@
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "rectangle",
-                      "id": "3KG82",
-                      "name": "emailIcon",
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "./assets/icons/email.svg",
-                        "mode": "fit"
-                      },
+                      "type": "icon_font",
+                      "id": "iL4oX",
+                      "name": "topMail",
                       "width": 24,
-                      "height": 24
+                      "height": 24,
+                      "iconFontName": "mail",
+                      "iconFontFamily": "lucide",
+                      "fill": "#A6BEFF"
                     },
                     {
                       "type": "text",
@@ -115,17 +154,14 @@
                       "fontWeight": "500"
                     },
                     {
-                      "type": "rectangle",
-                      "id": "cQ2bR",
-                      "name": "phoneIcon",
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "./assets/icons/phone.svg",
-                        "mode": "fit"
-                      },
+                      "type": "icon_font",
+                      "id": "LfpwS",
+                      "name": "topPhone",
                       "width": 24,
-                      "height": 24
+                      "height": 24,
+                      "iconFontName": "phone",
+                      "iconFontFamily": "lucide",
+                      "fill": "#A6BEFF"
                     },
                     {
                       "type": "text",
@@ -329,7 +365,7 @@
           "id": "d5Obz",
           "name": "Intro Section",
           "width": "fill_container",
-          "fill": "#FFFFFF",
+          "fill": "#0D1A32",
           "layout": "vertical",
           "gap": 28,
           "padding": 72,
@@ -338,7 +374,7 @@
               "type": "text",
               "id": "rfboE",
               "name": "introLabel",
-              "fill": "#4A6BFF",
+              "fill": "#7FA4FF",
               "content": "关于我们",
               "fontFamily": "Inter",
               "fontSize": 18,
@@ -348,7 +384,7 @@
               "type": "text",
               "id": "VCf4Z",
               "name": "introTitle",
-              "fill": "#10203D",
+              "fill": "#F3F7FF",
               "textGrowth": "fixed-width",
               "width": 900,
               "content": "iViolet 公司致力于为客户提供高性价比的定制化电子商务解决方案",
@@ -391,7 +427,7 @@
                       "type": "text",
                       "id": "8uIQ5",
                       "name": "introParagraph",
-                      "fill": "#344563",
+                      "fill": "#C3D1EA",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "iViolet公司成立于2017年，从成立开始，公司致力于为客户提供成熟的电子商务解决方案。公司主要业务为各种类型的电子商务型网站、手机App开发，尤其擅长旅馆业和奶茶咖啡等快消行业的定制系统。我们坚持底层自主开发，避免模板化限制，为每个客户提供真正契合业务的解决方案。",
@@ -405,44 +441,74 @@
                       "id": "k5lvq",
                       "name": "tagsRow",
                       "width": "fill_container",
-                      "gap": 14,
+                      "gap": 18,
                       "children": [
                         {
                           "type": "frame",
                           "id": "GW5cw",
                           "name": "tag1",
                           "width": "fill_container",
-                          "fill": "#EEF3FF",
-                          "cornerRadius": 999,
-                          "gap": 10,
+                          "height": 64,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 90,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#2D64F5",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2348B8",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#8CB2FF99"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#15317888",
+                            "offset": {
+                              "x": 0,
+                              "y": 8
+                            },
+                            "blur": 18
+                          },
+                          "gap": 12,
                           "padding": [
-                            10,
-                            14
+                            0,
+                            22
                           ],
                           "alignItems": "center",
                           "children": [
                             {
-                              "type": "rectangle",
-                              "id": "HlxW1",
-                              "name": "tag1Icon",
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "./assets/icons/hotel.svg",
-                                "mode": "fit"
-                              },
-                              "width": 22,
-                              "height": 22
+                              "type": "icon_font",
+                              "id": "9qWU8",
+                              "name": "tagHotel",
+                              "width": 26,
+                              "height": 26,
+                              "iconFontName": "hotel",
+                              "iconFontFamily": "lucide",
+                              "fill": "#E8F1FF"
                             },
                             {
                               "type": "text",
                               "id": "CrWr8",
                               "name": "tag1Text",
-                              "fill": "#14223F",
+                              "fill": "#F7FBFF",
                               "content": "旅馆业订房系统",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "500"
+                              "fontSize": 19,
+                              "fontWeight": "600"
                             }
                           ]
                         },
@@ -451,37 +517,67 @@
                           "id": "dE7LI",
                           "name": "tag2",
                           "width": "fill_container",
-                          "fill": "#EEF3FF",
-                          "cornerRadius": 999,
-                          "gap": 10,
+                          "height": 64,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 90,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#2D64F5",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2348B8",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#8CB2FF99"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#15317888",
+                            "offset": {
+                              "x": 0,
+                              "y": 8
+                            },
+                            "blur": 18
+                          },
+                          "gap": 12,
                           "padding": [
-                            10,
-                            14
+                            0,
+                            22
                           ],
                           "alignItems": "center",
                           "children": [
                             {
-                              "type": "rectangle",
-                              "id": "qJYD2",
-                              "name": "tag2Icon",
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "./assets/icons/coffee.svg",
-                                "mode": "fit"
-                              },
-                              "width": 22,
-                              "height": 22
+                              "type": "icon_font",
+                              "id": "xudwA",
+                              "name": "tagCoffee",
+                              "width": 26,
+                              "height": 26,
+                              "iconFontName": "coffee",
+                              "iconFontFamily": "lucide",
+                              "fill": "#E8F1FF"
                             },
                             {
                               "type": "text",
                               "id": "4Rpz6",
                               "name": "tag2Text",
-                              "fill": "#14223F",
+                              "fill": "#F7FBFF",
                               "content": "餐饮点单与POS",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "500"
+                              "fontSize": 19,
+                              "fontWeight": "600"
                             }
                           ]
                         },
@@ -490,37 +586,67 @@
                           "id": "qFspy",
                           "name": "tag3",
                           "width": "fill_container",
-                          "fill": "#EEF3FF",
-                          "cornerRadius": 999,
-                          "gap": 10,
+                          "height": 64,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 90,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#2D64F5",
+                                "position": 0
+                              },
+                              {
+                                "color": "#2348B8",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#8CB2FF99"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#15317888",
+                            "offset": {
+                              "x": 0,
+                              "y": 8
+                            },
+                            "blur": 18
+                          },
+                          "gap": 12,
                           "padding": [
-                            10,
-                            14
+                            0,
+                            22
                           ],
                           "alignItems": "center",
                           "children": [
                             {
-                              "type": "rectangle",
-                              "id": "k0t8f",
-                              "name": "tag3Icon",
-                              "fill": {
-                                "type": "image",
-                                "enabled": true,
-                                "url": "./assets/icons/ecommerce.svg",
-                                "mode": "fit"
-                              },
-                              "width": 22,
-                              "height": 22
+                              "type": "icon_font",
+                              "id": "fGjtd",
+                              "name": "tagShop",
+                              "width": 26,
+                              "height": 26,
+                              "iconFontName": "shopping-bag",
+                              "iconFontFamily": "lucide",
+                              "fill": "#E8F1FF"
                             },
                             {
                               "type": "text",
                               "id": "SD3jc",
                               "name": "tag3Text",
-                              "fill": "#14223F",
+                              "fill": "#F7FBFF",
                               "content": "电商网站与App",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
-                              "fontWeight": "500"
+                              "fontSize": 19,
+                              "fontWeight": "600"
                             }
                           ]
                         }
@@ -537,7 +663,7 @@
           "id": "ORnxk",
           "name": "Services Section",
           "width": "fill_container",
-          "fill": "#F3F6FC",
+          "fill": "#0A152B",
           "layout": "vertical",
           "gap": 24,
           "padding": [
@@ -551,7 +677,7 @@
               "type": "text",
               "id": "cQfUa",
               "name": "serviceLabel",
-              "fill": "#3F62FF",
+              "fill": "#7FA4FF",
               "content": "我们的服务",
               "fontFamily": "Inter",
               "fontSize": 18,
@@ -561,7 +687,7 @@
               "type": "text",
               "id": "Ow1MA",
               "name": "serviceTitle",
-              "fill": "#10203D",
+              "fill": "#F3F7FF",
               "textGrowth": "fixed-width",
               "width": 700,
               "content": "我们能够提供的服务",
@@ -581,17 +707,21 @@
                   "id": "L2ZMz",
                   "name": "cardInn",
                   "width": "fill_container",
-                  "fill": "#FFFFFF",
+                  "fill": "#122645",
                   "cornerRadius": 22,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A5D9299"
+                  },
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#11265514",
+                    "color": "#00000045",
                     "offset": {
                       "x": 0,
-                      "y": 8
+                      "y": 10
                     },
-                    "blur": 24
+                    "blur": 26
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -627,23 +757,20 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "KD9h9",
-                          "name": "cardInnIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/hotel.svg",
-                            "mode": "fit"
-                          },
-                          "width": 26,
-                          "height": 26
+                          "type": "icon_font",
+                          "id": "OR4tu",
+                          "name": "serviceHotel",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "hotel",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8FAEFF"
                         },
                         {
                           "type": "text",
                           "id": "Ztmys",
                           "name": "cardInnTitle",
-                          "fill": "#142446",
+                          "fill": "#F4F8FF",
                           "content": "旅馆业解决方案",
                           "fontFamily": "Inter",
                           "fontSize": 22,
@@ -655,7 +782,7 @@
                       "type": "text",
                       "id": "WBSn9",
                       "name": "cardInnDesc",
-                      "fill": "#3E4D69",
+                      "fill": "#C5D2EA",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "专业化的网站设计，特别针对旅馆业(inn)以及奶茶咖啡等快消餐饮业具备完善的解决方案。",
@@ -663,6 +790,45 @@
                       "fontFamily": "Inter",
                       "fontSize": 18,
                       "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Xv9XC",
+                      "name": "btnInn",
+                      "fill": "#1E4FBF",
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#8FB1FF99"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "STWgv",
+                          "name": "btnInnIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DCE8FF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o0azp",
+                          "name": "btnInnText",
+                          "fill": "#F6FAFF",
+                          "content": "详细了解",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -671,17 +837,21 @@
                   "id": "lCd5o",
                   "name": "cardRest",
                   "width": "fill_container",
-                  "fill": "#FFFFFF",
+                  "fill": "#122645",
                   "cornerRadius": 22,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A5D9299"
+                  },
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#11265514",
+                    "color": "#00000045",
                     "offset": {
                       "x": 0,
-                      "y": 8
+                      "y": 10
                     },
-                    "blur": 24
+                    "blur": 26
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -717,23 +887,20 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "jIXNY",
-                          "name": "cardRestIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/coffee.svg",
-                            "mode": "fit"
-                          },
-                          "width": 26,
-                          "height": 26
+                          "type": "icon_font",
+                          "id": "G810M",
+                          "name": "serviceCoffee",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "coffee",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8FAEFF"
                         },
                         {
                           "type": "text",
                           "id": "iiEvK",
                           "name": "cardRestTitle",
-                          "fill": "#142446",
+                          "fill": "#F4F8FF",
                           "content": "餐饮软件开发",
                           "fontFamily": "Inter",
                           "fontSize": 22,
@@ -745,7 +912,7 @@
                       "type": "text",
                       "id": "RcxeJ",
                       "name": "cardRestDesc",
-                      "fill": "#3E4D69",
+                      "fill": "#C5D2EA",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "定制化的软件开发，特别是针对各种类型的电子商务软件（餐饮、小型超市）的定制化开发。",
@@ -753,6 +920,45 @@
                       "fontFamily": "Inter",
                       "fontSize": 18,
                       "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cURZI",
+                      "name": "btnRest",
+                      "fill": "#1E4FBF",
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#8FB1FF99"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "AC8IH",
+                          "name": "btnRestIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DCE8FF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4Uh4r",
+                          "name": "btnRestText",
+                          "fill": "#F6FAFF",
+                          "content": "详细了解",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -761,17 +967,21 @@
                   "id": "r6POO",
                   "name": "cardWeb",
                   "width": "fill_container",
-                  "fill": "#FFFFFF",
+                  "fill": "#122645",
                   "cornerRadius": 22,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3A5D9299"
+                  },
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#11265514",
+                    "color": "#00000045",
                     "offset": {
                       "x": 0,
-                      "y": 8
+                      "y": 10
                     },
-                    "blur": 24
+                    "blur": 26
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -807,23 +1017,20 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "AREke",
-                          "name": "cardWebIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/ecommerce.svg",
-                            "mode": "fit"
-                          },
-                          "width": 26,
-                          "height": 26
+                          "type": "icon_font",
+                          "id": "mNrdy",
+                          "name": "serviceShop",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "shopping-bag",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8FAEFF"
                         },
                         {
                           "type": "text",
                           "id": "phAvK",
                           "name": "cardWebTitle",
-                          "fill": "#142446",
+                          "fill": "#F4F8FF",
                           "content": "网站与 App 开发",
                           "fontFamily": "Inter",
                           "fontSize": 22,
@@ -835,7 +1042,7 @@
                       "type": "text",
                       "id": "TdRQl",
                       "name": "cardWebDesc",
-                      "fill": "#3E4D69",
+                      "fill": "#C5D2EA",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "普通网站和手机App开发，包括展示型网站以及普通网站增加付款等电子商务功能。",
@@ -843,6 +1050,45 @@
                       "fontFamily": "Inter",
                       "fontSize": 18,
                       "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BnMdC",
+                      "name": "btnWeb",
+                      "fill": "#1E4FBF",
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#8FB1FF99"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "XGe7J",
+                          "name": "btnWebIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#DCE8FF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jaa98",
+                          "name": "btnWebText",
+                          "fill": "#F6FAFF",
+                          "content": "详细了解",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -930,17 +1176,14 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "PLH4X",
-                          "name": "addrIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/location.svg",
-                            "mode": "fit"
-                          },
+                          "type": "icon_font",
+                          "id": "BahXk",
+                          "name": "contactLoc",
                           "width": 24,
-                          "height": 24
+                          "height": 24,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#B4C9FF"
                         },
                         {
                           "type": "text",
@@ -969,17 +1212,14 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "Q3YA9",
-                          "name": "emailIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/email.svg",
-                            "mode": "fit"
-                          },
+                          "type": "icon_font",
+                          "id": "WddnI",
+                          "name": "contactMail",
                           "width": 24,
-                          "height": 24
+                          "height": 24,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "#B4C9FF"
                         },
                         {
                           "type": "text",
@@ -1008,17 +1248,14 @@
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "3OBWy",
-                          "name": "phoneRowIcon",
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./assets/icons/phone.svg",
-                            "mode": "fit"
-                          },
+                          "type": "icon_font",
+                          "id": "DBSIH",
+                          "name": "contactPhone",
                           "width": 24,
-                          "height": 24
+                          "height": 24,
+                          "iconFontName": "phone",
+                          "iconFontFamily": "lucide",
+                          "fill": "#B4C9FF"
                         },
                         {
                           "type": "text",
@@ -1087,11 +1324,43 @@
                       "type": "frame",
                       "id": "nv5Ig",
                       "name": "cta",
-                      "fill": "#5B7CFF",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 90,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#6A90FF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#456BDE",
+                            "position": 1
+                          }
+                        ]
+                      },
                       "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#C9D9FF99"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#1A3E9B66",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 22
+                      },
                       "padding": [
-                        10,
-                        18
+                        12,
+                        24
                       ],
                       "justifyContent": "center",
                       "alignItems": "center",
@@ -1103,7 +1372,7 @@
                           "fill": "#FFFFFF",
                           "content": "立即咨询",
                           "fontFamily": "Inter",
-                          "fontSize": 18,
+                          "fontSize": 19,
                           "fontWeight": "700"
                         }
                       ]

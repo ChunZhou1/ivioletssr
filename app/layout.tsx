@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
 import "../styles/globals.css";
-import "react-slideshow-image/dist/styles.css";
 
 export const metadata: Metadata = {
   title: "iViolet",

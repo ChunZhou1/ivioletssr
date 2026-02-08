@@ -1,87 +1,73 @@
-"use client";
-
-import React from "react";
-import { Stack, GridLegacy as Grid, Typography, Link } from "@mui/material";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import HotelRoundedIcon from "@mui/icons-material/HotelRounded";
+import LocalCafeRoundedIcon from "@mui/icons-material/LocalCafeRounded";
+import ShoppingBagRoundedIcon from "@mui/icons-material/ShoppingBagRounded";
 import Image from "next/image";
-
-import { useProduct } from "hooks/home/useProduct";
+import Link from "next/link";
+import React from "react";
+import styles from "components/home/HomePage.module.css";
 
 export type ProductSingle = {
   keyValue: string;
-  content: string;
+  title: string;
+  description: string;
+  href: string;
+  icon: "hotel" | "coffee" | "shopping";
   imgSrc: string;
 };
 
 type ProductProps = {
-  product: ProductSingle[];
+  products: ProductSingle[];
 };
 
-export const Product = ({ product }: ProductProps) => {
-  const handleCallBackForProduct = useProduct();
+const renderServiceIcon = (icon: ProductSingle["icon"]) => {
+  switch (icon) {
+    case "hotel":
+      return <HotelRoundedIcon className={styles.serviceTitleIcon} />;
+    case "coffee":
+      return <LocalCafeRoundedIcon className={styles.serviceTitleIcon} />;
+    case "shopping":
+      return <ShoppingBagRoundedIcon className={styles.serviceTitleIcon} />;
+    default:
+      return <ShoppingBagRoundedIcon className={styles.serviceTitleIcon} />;
+  }
+};
+
+export const Product = ({ products }: ProductProps) => {
   return (
-    <Stack direction="column" spacing={6}>
-      <Stack direction="column" alignItems="center">
-        <Typography variant="h4">我们能够提供的服务</Typography>
-      </Stack>
+    <section className={styles.servicesSection}>
+      <div className={styles.sectionInner}>
+        <p className={styles.sectionEyebrow}>我们的服务</p>
+        <h2 className={styles.sectionTitle}>我们能够提供的服务</h2>
 
-      {product.map((item, idx) => (
-        <ProductItem
-          key={item.keyValue}
-          keyValue={item.keyValue}
-          content={item.content}
-          imgSrc={item.imgSrc}
-          callbackForproduct={handleCallBackForProduct}
-          reverse={!(idx % 2 === 0)}
-        />
-      ))}
-    </Stack>
-  );
-};
+        <div className={styles.serviceGrid}>
+          {products.map((item) => (
+            <article key={item.keyValue} className={styles.serviceCard}>
+              <div className={styles.serviceImageCard}>
+                <Image
+                  src={item.imgSrc}
+                  alt={item.title}
+                  fill
+                  className={styles.serviceImage}
+                  sizes="(max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
 
-type ProductItemProps = {
-  keyValue: string;
-  content: string;
-  imgSrc: string;
-  reverse?: boolean;
-  callbackForproduct?: (key: string) => void;
-};
-const ProductItem = ({
-  keyValue,
-  content,
-  imgSrc,
-  reverse,
-  callbackForproduct,
-}: ProductItemProps) => {
-  return (
-    <Grid
-      container
-      direction={reverse ? "row-reverse" : "row"}
-      justifyContent="center"
-    >
-      <Grid item sm={12} md={1}></Grid>
-      <Grid item sm={12} md={5}>
-        <Stack direction="column" alignItems="center">
-          <Image src={imgSrc} width={400} height={250} alt={imgSrc} />
-        </Stack>
-      </Grid>
-      <Grid item sm={12} md={5}>
-        <Stack direction="column" alignItems="center">
-          <Stack direction="column" alignItems="flex-start" spacing={10}>
-            <Typography variant="h5">{content}</Typography>
-            <Link
-              variant="h5"
-              sx={{ fontWeight: 700 }}
-              color={"red"}
-              underline="none"
-              href="##"
-              onClick={() => callbackForproduct && callbackForproduct(keyValue)}
-            >
-              详细了解
-            </Link>
-          </Stack>
-        </Stack>
-      </Grid>
-      <Grid item sm={12} md={1}></Grid>
-    </Grid>
+              <div className={styles.serviceTitleRow}>
+                {renderServiceIcon(item.icon)}
+                <h3 className={styles.serviceTitle}>{item.title}</h3>
+              </div>
+
+              <p className={styles.serviceDesc}>{item.description}</p>
+
+              <Link href={item.href} className={styles.cardButton}>
+                <span>详细了解</span>
+                <ArrowForwardRoundedIcon className={styles.cardButtonIcon} />
+              </Link>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
