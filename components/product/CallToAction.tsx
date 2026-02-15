@@ -1,16 +1,21 @@
 import React from "react";
-import NextLink from "next/link";
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
-import { productCtaSx } from "./styles";
+import { consultButtonSx, productCtaSx } from "./styles";
 
 type CallToActionProps = {
   title: string;
   description: string;
   imageSrc: string;
+  consultHref: string;
 };
 
-export const CallToAction = ({ title, description, imageSrc }: CallToActionProps) => {
+export const CallToAction = ({ title, description, imageSrc, consultHref }: CallToActionProps) => {
+  const ctaButtonSx = {
+    ...(consultButtonSx as Record<string, unknown>),
+    ...(productCtaSx.button as Record<string, unknown>),
+  };
+
   return (
     <Box sx={productCtaSx.card}>
       <Box sx={productCtaSx.copy}>
@@ -18,9 +23,11 @@ export const CallToAction = ({ title, description, imageSrc }: CallToActionProps
           {title}
         </Typography>
         <Typography sx={productCtaSx.desc}>{description}</Typography>
-        <Button component={NextLink} href="/" sx={productCtaSx.button}>
-          立即咨询
-        </Button>
+        <Box sx={productCtaSx.buttonWrap}>
+          <Button component="a" href={consultHref} sx={ctaButtonSx}>
+            立即邮件咨询
+          </Button>
+        </Box>
       </Box>
 
       <Box sx={productCtaSx.imageCard}>

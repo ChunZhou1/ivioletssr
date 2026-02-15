@@ -21,14 +21,41 @@ export const productSharedSx: SxMap = {
   },
 };
 
+export const consultButtonSx: SxProps<Theme> = {
+  minHeight: "56px",
+  px: "30px",
+  borderRadius: "999px",
+  border: "1px solid #ffd983",
+  background: "linear-gradient(180deg, #ffd666 0%, #ff9f2d 100%)",
+  boxShadow: "0 12px 24px #8e4a0f66",
+  color: "#1b2a43",
+  fontSize: "22px",
+  fontWeight: 800,
+  letterSpacing: "0.01em",
+  textTransform: "none",
+  "&:hover": {
+    filter: "brightness(1.06)",
+    background: "linear-gradient(180deg, #ffe08a 0%, #ffaf4b 100%)",
+  },
+  "@media (max-width: 640px)": {
+    minHeight: "52px",
+    px: "24px",
+    fontSize: "20px",
+  },
+};
+
 export const productHeaderSx: SxMap = {
   topBar: {
-    display: "flex",
-    flexDirection: "row",
+    display: "grid",
+    gridTemplateColumns: "auto 1fr auto",
     alignItems: "center",
-    justifyContent: "space-between",
-    gap: "16px",
+    gap: "12px",
     py: "6px",
+    "@media (max-width: 1100px)": {
+      gridTemplateColumns: "1fr",
+      justifyItems: "start",
+      gap: "10px",
+    },
   },
   brandGroup: {
     display: "flex",
@@ -69,6 +96,31 @@ export const productHeaderSx: SxMap = {
       fontSize: "18px",
     },
   },
+  contactGroup: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    "@media (max-width: 1100px)": {
+      justifyContent: "flex-start",
+    },
+  },
+  contactPill: {
+    display: "inline-flex",
+    alignItems: "center",
+    minHeight: "36px",
+    px: "12px",
+    borderRadius: "999px",
+    border: "1px solid #83a3e384",
+    backgroundColor: "#162a4fd9",
+    color: "#e7ecf8",
+    fontSize: "14px",
+    textDecoration: "none",
+    transition: "background-color 0.2s ease",
+    "&:hover": {
+      backgroundColor: "#1d3c71",
+    },
+  },
   backButton: {
     minHeight: "36px",
     px: "14px",
@@ -100,7 +152,10 @@ export const productHeroSx: SxMap = {
     },
   },
   copy: {
-    alignSelf: "center",
+    alignSelf: "stretch",
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100%",
   },
   tag: {
     mb: "10px",
@@ -131,6 +186,15 @@ export const productHeroSx: SxMap = {
     "@media (max-width: 640px)": {
       fontSize: "18px",
     },
+  },
+  ctaButton: {
+    mt: 0,
+  },
+  ctaWrap: {
+    display: "flex",
+    justifyContent: "flex-start",
+    mt: "auto",
+    mb: "12px",
   },
   imageCard: {
     position: "relative",
@@ -207,6 +271,12 @@ export const productFeatureSx: SxMap = {
       fontSize: "16px",
     },
   },
+  ctaWrap: {
+    mt: "18px",
+    mb: "8px",
+    display: "flex",
+    justifyContent: "flex-start",
+  },
 };
 
 export const productFunctionSx: SxMap = {
@@ -275,7 +345,10 @@ export const productCtaSx: SxMap = {
     },
   },
   copy: {
-    alignSelf: "center",
+    alignSelf: "stretch",
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100%",
   },
   title: {
     color: "#fff",
@@ -296,19 +369,13 @@ export const productCtaSx: SxMap = {
     },
   },
   button: {
-    mt: "14px",
-    minHeight: "44px",
-    px: "22px",
-    borderRadius: "999px",
-    border: "1px solid #c9d9ff99",
-    background: "linear-gradient(180deg, #6a90ff 0%, #456bde 100%)",
-    color: "#fff",
-    fontSize: "18px",
-    fontWeight: 700,
-    textTransform: "none",
-    "&:hover": {
-      filter: "brightness(1.08)",
-    },
+    mt: 0,
+  },
+  buttonWrap: {
+    display: "flex",
+    justifyContent: "flex-start",
+    mt: "auto",
+    mb: "10px",
   },
   imageCard: {
     position: "relative",

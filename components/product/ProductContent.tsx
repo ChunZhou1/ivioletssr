@@ -23,6 +23,7 @@ type ProductContentProps = {
   ctaTitle: string;
   ctaDescription: string;
   ctaImage: string;
+  consultHref: string;
 };
 
 export const ProductContent = ({
@@ -37,15 +38,31 @@ export const ProductContent = ({
   ctaTitle,
   ctaDescription,
   ctaImage,
+  consultHref,
 }: ProductContentProps) => {
   return (
     <Box component="main" sx={productSharedSx.pageRoot}>
       <Box sx={productSharedSx.sectionInner}>
         <Header />
-        <Title heroTag={heroTag} title1={title1} title2={title2} titlePic={heroImage} />
-        <Charact charactDataArray={charactDataArray} sectionTitle={charactSectionTitle} />
+        <Title
+          consultHref={consultHref}
+          heroTag={heroTag}
+          title1={title1}
+          title2={title2}
+          titlePic={heroImage}
+        />
+        <Charact
+          charactDataArray={charactDataArray}
+          consultHref={consultHref}
+          sectionTitle={charactSectionTitle}
+        />
         <Function functionDataArray={functionDataArray} sectionTitle={functionSectionTitle} />
-        <CallToAction description={ctaDescription} imageSrc={ctaImage} title={ctaTitle} />
+        <CallToAction
+          consultHref={consultHref}
+          description={ctaDescription}
+          imageSrc={ctaImage}
+          title={ctaTitle}
+        />
       </Box>
     </Box>
   );

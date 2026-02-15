@@ -30,6 +30,7 @@ type ProductConfig = {
   ctaTitle: string;
   ctaDescription: string;
   ctaImage: string;
+  consultHref: string;
 };
 
 const featureImageMap: Record<ProductId, string[]> = {
@@ -63,6 +64,9 @@ const withFeatureImages = (
     imageAlt: item.title,
   }));
 
+const createMailtoHref = (productLabel: string) =>
+  `mailto:ivioletca@gmail.com?subject=${encodeURIComponent(`咨询${productLabel}方案`)}`;
+
 const productMap: Record<ProductId, ProductConfig> = {
   proWeb: {
     heroTag: "旅馆业数字化解决方案",
@@ -76,6 +80,7 @@ const productMap: Record<ProductId, ProductConfig> = {
     ctaTitle: "预约 30 分钟方案沟通",
     ctaDescription: "告诉我们你的物业规模与运营目标，我们将提供可执行功能清单与排期建议。",
     ctaImage: "/product/proWeb/cta.jpg",
+    consultHref: createMailtoHref("旅馆业"),
   },
   softwareDev: {
     heroTag: "餐饮业数字化解决方案",
@@ -89,6 +94,7 @@ const productMap: Record<ProductId, ProductConfig> = {
     ctaTitle: "预约门店数字化方案咨询",
     ctaDescription: "告诉我们你的门店数量、出餐流程和经营目标，我们会给出系统模块和上线节奏建议。",
     ctaImage: "/product/softwareDev/cta.png",
+    consultHref: createMailtoHref("餐饮软件"),
   },
   comWeb: {
     heroTag: "网站与 App 增长方案",
@@ -102,6 +108,7 @@ const productMap: Record<ProductId, ProductConfig> = {
     ctaTitle: "预约网站与 App 方案咨询",
     ctaDescription: "告诉我们你的行业和目标，我们将给出从展示到转化的功能与排期建议。",
     ctaImage: "/product/comWeb/cta.png",
+    consultHref: createMailtoHref("网站与App"),
   },
 };
 
@@ -133,6 +140,7 @@ export default function ProductPage({ params }: ProductPageProps) {
       ctaTitle={productData.ctaTitle}
       ctaDescription={productData.ctaDescription}
       ctaImage={productData.ctaImage}
+      consultHref={productData.consultHref}
     />
   );
 }

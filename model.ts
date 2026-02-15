@@ -13,4 +13,5 @@ export type ProductDetail = {
       ctaTitle:string
       ctaDescription:string
       ctaImage:string
+      consultHref:string
 }

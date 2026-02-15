@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
-import { productFeatureSx } from "./styles";
+import { consultButtonSx, productFeatureSx } from "./styles";
 
 export type CharactDataType = {
   title: string;
@@ -13,9 +13,10 @@ export type CharactDataType = {
 type CharactType = {
   sectionTitle: string;
   charactDataArray: CharactDataType[];
+  consultHref: string;
 };
 
-export const Charact = ({ sectionTitle, charactDataArray }: CharactType) => {
+export const Charact = ({ sectionTitle, charactDataArray, consultHref }: CharactType) => {
   return (
     <Box sx={productFeatureSx.section}>
       <Typography sx={productFeatureSx.eyebrow}>核心特点</Typography>
@@ -32,6 +33,11 @@ export const Charact = ({ sectionTitle, charactDataArray }: CharactType) => {
             title={item.title}
           />
         ))}
+      </Box>
+      <Box sx={productFeatureSx.ctaWrap}>
+        <Button component="a" href={consultHref} sx={consultButtonSx}>
+          立即邮件咨询
+        </Button>
       </Box>
     </Box>
   );

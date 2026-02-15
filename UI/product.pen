@@ -94,6 +94,75 @@
             },
             {
               "type": "frame",
+              "id": "sS9Lp",
+              "name": "contactGroup",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wfoXv",
+                  "name": "mailPill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YRRvc",
+                      "name": "pMailTxt",
+                      "fill": "#E7ECF8",
+                      "content": "ivioletca@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AjHeR",
+                  "name": "phonePill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m0MAC",
+                      "name": "pPhoneTxt",
+                      "fill": "#E7ECF8",
+                      "content": "+1 437 231 4578",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
               "id": "KVLho",
               "name": "backBtn",
               "height": 40,
@@ -202,6 +271,64 @@
                   "fontFamily": "Inter",
                   "fontSize": 22,
                   "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Gm5Yq",
+                  "name": "heroBtnWrap",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CCJpz",
+                      "name": "heroMailBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "k4jNi",
+                          "name": "pHeroBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -530,6 +657,64 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "6teOI",
+              "name": "featureBtnWrap",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HDN2o",
+                  "name": "featureMailBtn",
+                  "height": 56,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFD666",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FF9F2D",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFD983"
+                  },
+                  "padding": [
+                    0,
+                    30
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ASOdx",
+                      "name": "pFeatBtnTxt",
+                      "fill": "#1B2A43",
+                      "content": "立即邮件咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -853,49 +1038,59 @@
                 },
                 {
                   "type": "frame",
-                  "id": "uth49",
-                  "name": "ctaBtn",
-                  "height": 44,
-                  "fill": {
-                    "type": "gradient",
-                    "gradientType": "linear",
-                    "enabled": true,
-                    "rotation": 180,
-                    "size": {
-                      "height": 1
-                    },
-                    "colors": [
-                      {
-                        "color": "#6A90FF",
-                        "position": 0
-                      },
-                      {
-                        "color": "#456BDE",
-                        "position": 1
-                      }
-                    ]
-                  },
-                  "cornerRadius": 999,
-                  "stroke": {
-                    "thickness": 1,
-                    "fill": "#C9D9FF99"
-                  },
-                  "padding": [
-                    0,
-                    22
-                  ],
+                  "id": "Wpauw",
+                  "name": "ctaBtnWrap",
+                  "width": "fill_container",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "TtRHw",
-                      "name": "ctaBtnTxt",
-                      "fill": "#FFFFFF",
-                      "content": "立即咨询",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "700"
+                      "type": "frame",
+                      "id": "uth49",
+                      "name": "ctaBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TtRHw",
+                          "name": "ctaBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1019,6 +1214,75 @@
             },
             {
               "type": "frame",
+              "id": "PfVdQ",
+              "name": "contactGroup",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ho60x",
+                  "name": "mailPill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BySSF",
+                      "name": "sMailTxt",
+                      "fill": "#E7ECF8",
+                      "content": "ivioletca@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VUAFf",
+                  "name": "phonePill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "art8a",
+                      "name": "sPhoneTxt",
+                      "fill": "#E7ECF8",
+                      "content": "+1 437 231 4578",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
               "id": "JIn0h",
               "name": "backBtn",
               "height": 40,
@@ -1127,6 +1391,64 @@
                   "fontFamily": "Inter",
                   "fontSize": 22,
                   "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "G0GWY",
+                  "name": "heroBtnWrap",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qw8VH",
+                      "name": "heroMailBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jhtOU",
+                          "name": "sHeroBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -1455,6 +1777,64 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "9wtj1",
+              "name": "featureBtnWrap",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "u4P5b",
+                  "name": "featureMailBtn",
+                  "height": 56,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFD666",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FF9F2D",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFD983"
+                  },
+                  "padding": [
+                    0,
+                    30
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KL1M0",
+                      "name": "sFeatBtnTxt",
+                      "fill": "#1B2A43",
+                      "content": "立即邮件咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -1778,49 +2158,59 @@
                 },
                 {
                   "type": "frame",
-                  "id": "ZQLOL",
-                  "name": "ctaBtn",
-                  "height": 44,
-                  "fill": {
-                    "type": "gradient",
-                    "gradientType": "linear",
-                    "enabled": true,
-                    "rotation": 180,
-                    "size": {
-                      "height": 1
-                    },
-                    "colors": [
-                      {
-                        "color": "#6A90FF",
-                        "position": 0
-                      },
-                      {
-                        "color": "#456BDE",
-                        "position": 1
-                      }
-                    ]
-                  },
-                  "cornerRadius": 999,
-                  "stroke": {
-                    "thickness": 1,
-                    "fill": "#C9D9FF99"
-                  },
-                  "padding": [
-                    0,
-                    22
-                  ],
+                  "id": "xK8FW",
+                  "name": "ctaBtnWrap",
+                  "width": "fill_container",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "8VzU3",
-                      "name": "ctaBtnTxt",
-                      "fill": "#FFFFFF",
-                      "content": "立即咨询",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "700"
+                      "type": "frame",
+                      "id": "ZQLOL",
+                      "name": "ctaBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8VzU3",
+                          "name": "ctaBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -1944,6 +2334,75 @@
             },
             {
               "type": "frame",
+              "id": "xE2iD",
+              "name": "contactGroup",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wVkoy",
+                  "name": "mailPill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7Twjz",
+                      "name": "cMailTxt",
+                      "fill": "#E7ECF8",
+                      "content": "ivioletca@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "04yrh",
+                  "name": "phonePill",
+                  "height": 36,
+                  "fill": "#162A4F",
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#83A3E3"
+                  },
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T4J5t",
+                      "name": "cPhoneTxt",
+                      "fill": "#E7ECF8",
+                      "content": "+1 437 231 4578",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
               "id": "suly0",
               "name": "backBtn",
               "height": 40,
@@ -2052,6 +2511,64 @@
                   "fontFamily": "Inter",
                   "fontSize": 22,
                   "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "rzJDN",
+                  "name": "heroBtnWrap",
+                  "width": "fill_container",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zdhPq",
+                      "name": "heroMailBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jQbUp",
+                          "name": "cHeroBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -2380,6 +2897,64 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "i2SiS",
+              "name": "featureBtnWrap",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Sx4aI",
+                  "name": "featureMailBtn",
+                  "height": 56,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFD666",
+                        "position": 0
+                      },
+                      {
+                        "color": "#FF9F2D",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFD983"
+                  },
+                  "padding": [
+                    0,
+                    30
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kkOQh",
+                      "name": "cFeatBtnTxt",
+                      "fill": "#1B2A43",
+                      "content": "立即邮件咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -2660,49 +3235,59 @@
                 },
                 {
                   "type": "frame",
-                  "id": "QSL1M",
-                  "name": "ctaBtn",
-                  "height": 44,
-                  "fill": {
-                    "type": "gradient",
-                    "gradientType": "linear",
-                    "enabled": true,
-                    "rotation": 180,
-                    "size": {
-                      "height": 1
-                    },
-                    "colors": [
-                      {
-                        "color": "#6A90FF",
-                        "position": 0
-                      },
-                      {
-                        "color": "#456BDE",
-                        "position": 1
-                      }
-                    ]
-                  },
-                  "cornerRadius": 999,
-                  "stroke": {
-                    "thickness": 1,
-                    "fill": "#C9D9FF99"
-                  },
-                  "padding": [
-                    0,
-                    22
-                  ],
+                  "id": "5WcOS",
+                  "name": "ctaBtnWrap",
+                  "width": "fill_container",
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "UUPjc",
-                      "name": "ctaBtnTxt",
-                      "fill": "#FFFFFF",
-                      "content": "立即咨询",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "700"
+                      "type": "frame",
+                      "id": "QSL1M",
+                      "name": "ctaBtn",
+                      "height": 56,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 180,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FFD666",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF9F2D",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 999,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFD983"
+                      },
+                      "padding": [
+                        0,
+                        30
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UUPjc",
+                          "name": "ctaBtnTxt",
+                          "fill": "#1B2A43",
+                          "content": "立即邮件咨询",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
                     }
                   ]
                 }

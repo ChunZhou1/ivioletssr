@@ -1,15 +1,21 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
-import { productHeroSx } from "./styles";
+import { consultButtonSx, productHeroSx } from "./styles";
 
 export type TitleProps = {
   heroTag: string;
   title1: string;
   title2: string;
   titlePic: string;
+  consultHref: string;
 };
-export const Title = ({ heroTag, title1, title2, titlePic }: TitleProps) => {
+export const Title = ({ heroTag, title1, title2, titlePic, consultHref }: TitleProps) => {
+  const heroCtaSx = {
+    ...(consultButtonSx as Record<string, unknown>),
+    ...(productHeroSx.ctaButton as Record<string, unknown>),
+  };
+
   return (
     <Box sx={productHeroSx.card}>
       <Box sx={productHeroSx.copy}>
@@ -18,6 +24,11 @@ export const Title = ({ heroTag, title1, title2, titlePic }: TitleProps) => {
           {title1}
         </Typography>
         <Typography sx={productHeroSx.desc}>{title2}</Typography>
+        <Box sx={productHeroSx.ctaWrap}>
+          <Button component="a" href={consultHref} sx={heroCtaSx}>
+            立即邮件咨询
+          </Button>
+        </Box>
       </Box>
 
       <Box sx={productHeroSx.imageCard}>

@@ -1,5 +1,5 @@
 {
-  "version": "2.7",
+  "version": "2.8",
   "children": [
     {
       "type": "frame",
@@ -1324,21 +1324,22 @@
                       "type": "frame",
                       "id": "nv5Ig",
                       "name": "cta",
+                      "height": 56,
                       "fill": {
                         "type": "gradient",
                         "gradientType": "linear",
                         "enabled": true,
-                        "rotation": 90,
+                        "rotation": 180,
                         "size": {
                           "height": 1
                         },
                         "colors": [
                           {
-                            "color": "#6A90FF",
+                            "color": "#FFD666",
                             "position": 0
                           },
                           {
-                            "color": "#456BDE",
+                            "color": "#FF9F2D",
                             "position": 1
                           }
                         ]
@@ -1346,21 +1347,21 @@
                       "cornerRadius": 999,
                       "stroke": {
                         "thickness": 1,
-                        "fill": "#C9D9FF99"
+                        "fill": "#FFD983"
                       },
                       "effect": {
                         "type": "shadow",
                         "shadowType": "outer",
-                        "color": "#1A3E9B66",
+                        "color": "#8E4A0F66",
                         "offset": {
                           "x": 0,
-                          "y": 10
+                          "y": 12
                         },
-                        "blur": 22
+                        "blur": 24
                       },
                       "padding": [
-                        12,
-                        24
+                        0,
+                        30
                       ],
                       "justifyContent": "center",
                       "alignItems": "center",
@@ -1369,11 +1370,11 @@
                           "type": "text",
                           "id": "gqEXG",
                           "name": "ctaText",
-                          "fill": "#FFFFFF",
+                          "fill": "#1B2A43",
                           "content": "立即咨询",
                           "fontFamily": "Inter",
-                          "fontSize": 19,
-                          "fontWeight": "700"
+                          "fontSize": 22,
+                          "fontWeight": "800"
                         }
                       ]
                     }
