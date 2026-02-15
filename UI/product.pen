@@ -1,0 +1,2737 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "ggYq0",
+      "x": 920,
+      "y": 0,
+      "name": "Product/proWeb",
+      "width": 1280,
+      "height": 3000,
+      "fill": "#070F1F",
+      "layout": "vertical",
+      "gap": 28,
+      "padding": [
+        28,
+        36,
+        36,
+        36
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ash5q",
+          "name": "topBar",
+          "width": "fill_container",
+          "height": 72,
+          "padding": [
+            0,
+            8
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dijpM",
+              "name": "brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ak87C",
+                  "name": "logoBox",
+                  "width": 44,
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#89B7FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#2E5CE6",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nvq9S",
+                      "name": "logoWord",
+                      "fill": "#FFFFFF",
+                      "content": "iV",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Gq9RC",
+                  "name": "brandText",
+                  "fill": "#F3F7FF",
+                  "content": "iViolet Product",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KVLho",
+              "name": "backBtn",
+              "height": 40,
+              "fill": "#162A4F",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#83A3E3"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L2q3Q",
+                  "name": "backTxt",
+                  "fill": "#E7ECF8",
+                  "content": "← 返回首页",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KRQnE",
+          "name": "heroWrap",
+          "width": "fill_container",
+          "height": 388,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#08101F",
+                "position": 0
+              },
+              {
+                "color": "#0C1C3A",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 24,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#7F97CC52"
+          },
+          "gap": 24,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ywFFJ",
+              "name": "heroCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "f8cYs",
+                  "name": "heroTag",
+                  "fill": "#A7D4FF",
+                  "content": "旅馆业数字化解决方案",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "XdLGK",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "专业化的旅店(inn)解决方案。满足您各种定制化的需求",
+                  "lineHeight": 1.25,
+                  "fontFamily": "Inter",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "by5sK",
+                  "name": "heroDesc",
+                  "fill": "#D7E2F4",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "采用彻底的底层开发技术，相比于模板方案，真正支持高定制促销策略与多支付流程。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pYV1J",
+              "name": "heroImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jpwho",
+                "link": "https://unsplash.com/@jpwho",
+                "author": "Jiwoo Park"
+              },
+              "clip": true,
+              "width": 460,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1592800368172-b0539316733f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzExMTIyNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 18
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZWluR",
+          "name": "featSec",
+          "width": "fill_container",
+          "fill": "#0D1A32",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#355A8F80"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "5IviN",
+              "name": "featEyebrow",
+              "fill": "#7FA4FF",
+              "content": "核心特点",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "eJlcg",
+              "name": "featTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "围绕入住转化与运营效率重构产品体验",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "VuXvB",
+              "name": "featRows",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "g11pb",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SGrtb",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2f8oH",
+                          "name": "featImg1",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112818380.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "XJxQk",
+                          "name": "card1Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "在您自己的网站上用户可进行订房操作",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VAvx4",
+                          "name": "card1Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "不依赖第三方平台手续费，个性化页面直接放大物业价值并沉淀私域客户。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "0Zrhq",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jViJs",
+                          "name": "featImg2",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112824817.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "hsN4s",
+                          "name": "card2Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "底层软件自主开发，避免重订房",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9o7cV",
+                          "name": "card2Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "可与第三方渠道无缝集成，低延迟同步库存，显著降低 overbooking 风险。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "766tC",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XOm3u",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "d2HiS",
+                          "name": "featImg3",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112830562.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "aHkin",
+                          "name": "card3Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "灵活多变的促销方式",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "w8D3y",
+                          "name": "card3Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持尾房、入住时长与空房率等多维策略，动态提高入住率与房价收益。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6WROS",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "co8YU",
+                          "name": "featImg4",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112837247.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "STNOx",
+                          "name": "card4Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持多种付款方式",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "macOy",
+                          "name": "card4Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "可配置预授权、分阶段扣款与免押入住，既保护商家利益又提升用户体验。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "go7Mz",
+          "name": "funcSec",
+          "width": "fill_container",
+          "fill": "#0A152B",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D9299"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "xDMUr",
+              "name": "funcEyebrow",
+              "fill": "#7FA4FF",
+              "content": "功能模块",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "p3No4",
+              "name": "funcTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "覆盖从展示、下单到运营管理的完整链路",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "9rDBu",
+              "name": "funcList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ihtOw",
+                  "name": "fn1",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uJktk",
+                      "name": "fn1Title",
+                      "fill": "#F3F7FF",
+                      "content": "房间和物业展示功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z3sNp",
+                      "name": "fn1Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持轮播图、视频、房型与服务能力展示，帮助用户快速形成决策。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XqMGk",
+                  "name": "fn2",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HM6oV",
+                      "name": "fn2Title",
+                      "fill": "#F3F7FF",
+                      "content": "订房功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "grt4J",
+                      "name": "fn2Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持信用卡、微信、支付宝等支付，并支持分阶段扣款和信用卡自动校验。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mLTZ5",
+                  "name": "fn3",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a3Jg5",
+                      "name": "fn3Title",
+                      "fill": "#F3F7FF",
+                      "content": "强大的订单管理功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "P4X0t",
+                      "name": "fn3Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持入住与即将入住清单、调房、取消扣款以及自动或手动退款流程。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gCJ3D",
+                  "name": "fn4",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4yZPE",
+                      "name": "fn4Title",
+                      "fill": "#F3F7FF",
+                      "content": "强大的促销功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5WvXE",
+                      "name": "fn4Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持尾房促销、活动促销、入住率折扣与贵宾折扣等多种规则。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xwtpt",
+                  "name": "fn5",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bgiyn",
+                      "name": "fn5Title",
+                      "fill": "#F3F7FF",
+                      "content": "强大的同步功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fAkEK",
+                      "name": "fn5Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持与 airbnb、booking 等平台自动同步，缩短同步延迟并提升履约稳定性。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G8zaR",
+          "name": "ctaSec",
+          "width": "fill_container",
+          "height": 240,
+          "fill": "#13315A",
+          "cornerRadius": 20,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D92"
+          },
+          "gap": 20,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "GuZyQ",
+              "name": "ctaCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tc0nu",
+                  "name": "ctaTitle",
+                  "fill": "#FFFFFF",
+                  "content": "预约 30 分钟方案沟通",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "wD6St",
+                  "name": "ctaDesc",
+                  "fill": "#D8E4F8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "告诉我们你的物业规模与运营目标，我们将提供可执行功能清单与排期建议。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "uth49",
+                  "name": "ctaBtn",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#6A90FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#456BDE",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#C9D9FF99"
+                  },
+                  "padding": [
+                    0,
+                    22
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TtRHw",
+                      "name": "ctaBtnTxt",
+                      "fill": "#FFFFFF",
+                      "content": "立即咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Xnrd3",
+              "name": "ctaImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "s_tsuchiya",
+                "link": "https://unsplash.com/@s_tsuchiya",
+                "author": "Se. Tsuchiya"
+              },
+              "clip": true,
+              "width": 320,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1653049828515-c525068040b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzExMTIzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Ya81j",
+      "x": 2260,
+      "y": 0,
+      "name": "Product/softwareDev",
+      "width": 1280,
+      "height": 3000,
+      "fill": "#070F1F",
+      "layout": "vertical",
+      "gap": 28,
+      "padding": [
+        28,
+        36,
+        36,
+        36
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "51Lgh",
+          "name": "softTop",
+          "width": "fill_container",
+          "height": 72,
+          "padding": [
+            0,
+            8
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "23dab",
+              "name": "brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hZvNp",
+                  "name": "logoBox",
+                  "width": 44,
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#89B7FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#2E5CE6",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qcZYI",
+                      "name": "logoWord",
+                      "fill": "#FFFFFF",
+                      "content": "iV",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "CAJzY",
+                  "name": "brandText",
+                  "fill": "#F3F7FF",
+                  "content": "iViolet Product",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JIn0h",
+              "name": "backBtn",
+              "height": 40,
+              "fill": "#162A4F",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#83A3E3"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vbZ65",
+                  "name": "backTxt",
+                  "fill": "#E7ECF8",
+                  "content": "← 返回首页",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2hmt3",
+          "name": "softHero",
+          "width": "fill_container",
+          "height": 388,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#08101F",
+                "position": 0
+              },
+              {
+                "color": "#0C1C3A",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 24,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#7F97CC52"
+          },
+          "gap": 24,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "unfVZ",
+              "name": "heroCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LnaT6",
+                  "name": "heroTag",
+                  "fill": "#A7D4FF",
+                  "content": "餐饮业数字化解决方案",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "lUr62",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "针对奶茶，咖啡等快消业，我们提供成熟的电子商务解决方案",
+                  "lineHeight": 1.25,
+                  "fontFamily": "Inter",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "9EsUs",
+                  "name": "heroDesc",
+                  "fill": "#D7E2F4",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "针对网站点单、POS点单与收款、出货通知和出货管理，提供一体化流程支持。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Uc0pk",
+              "name": "heroImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jpwho",
+                "link": "https://unsplash.com/@jpwho",
+                "author": "Jiwoo Park"
+              },
+              "clip": true,
+              "width": 460,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771112363397.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 18
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tkJCv",
+          "name": "softFeat",
+          "width": "fill_container",
+          "fill": "#0D1A32",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#355A8F80"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "lJZEs",
+              "name": "featEyebrow",
+              "fill": "#7FA4FF",
+              "content": "核心特点",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "wbDPZ",
+              "name": "featTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "围绕获客、点单与履约效率打造门店增长引擎",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "3BhWE",
+              "name": "featRows",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0YVzB",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HZs6C",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HVEc7",
+                          "name": "featImg1",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112852898.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "A7LSV",
+                          "name": "card1Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "多种化的获客方式",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "og1Zo",
+                          "name": "card1Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持网站点单、现场自助点单与现金点单，多渠道覆盖不同消费场景。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QNaUo",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "7BZdw",
+                          "name": "featImg2",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112859721.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "bxP7f",
+                          "name": "card2Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "一体化管理软件，提升效率",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "A6C7A",
+                          "name": "card2Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "从下单到制作到通知取货全链路自动化，显著降低门店人工成本。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aNODw",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OT1oF",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "XHI8V",
+                          "name": "featImg3",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112867112.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "q4Bbb",
+                          "name": "card3Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持外卖数据导入",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HgfOB",
+                          "name": "card3Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "将外卖平台与自营销售数据汇总，帮助管理者快速洞察销售结构。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kxUpL",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tYKk3",
+                          "name": "featImg4",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112874888.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "adv9Q",
+                          "name": "card4Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持从底层开发，深度定制",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eFMwO",
+                          "name": "card4Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "按业务流程定制核心功能，避免冗余模块，系统更贴合实际经营。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DrKFM",
+          "name": "softFunc",
+          "width": "fill_container",
+          "fill": "#0A152B",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D9299"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "XMGYN",
+              "name": "funcEyebrow",
+              "fill": "#7FA4FF",
+              "content": "功能模块",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Mjvur",
+              "name": "funcTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "从前台点单到后厨协作与经营分析的完整功能集",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Xm1wl",
+              "name": "funcList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JAw8V",
+                  "name": "fn1",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OaBZv",
+                      "name": "fn1Title",
+                      "fill": "#F3F7FF",
+                      "content": "建立销售网站",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dZPhn",
+                      "name": "fn1Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "支持商品展示、支付、即时付款与到店付款，并提供促销和会员功能。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "obIc6",
+                  "name": "fn2",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1R4UX",
+                      "name": "fn2Title",
+                      "fill": "#F3F7FF",
+                      "content": "现场无接触自助点单",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Io1Yq",
+                      "name": "fn2Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "用户可通过触摸屏点单并在 POS 付款，减少排队和人工操作压力。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QWqGt",
+                  "name": "fn3",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W12Df",
+                      "name": "fn3Title",
+                      "fill": "#F3F7FF",
+                      "content": "工作流程自动管理",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kBwqv",
+                      "name": "fn3Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "用户付款后自动通知店员制作，制作完成后自动触达用户。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SDFOL",
+                  "name": "fn4",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dub4v",
+                      "name": "fn4Title",
+                      "fill": "#F3F7FF",
+                      "content": "强大的客户通知功能",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nRTMC",
+                      "name": "fn4Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "用户可实时查看订单进展，也可通过店内大屏追踪状态，提升体验。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KAZj6",
+                  "name": "fn5",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XEnal",
+                      "name": "fn5Title",
+                      "fill": "#F3F7FF",
+                      "content": "外卖信息导入与后台管理",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kf6om",
+                      "name": "fn5Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "分析不同时段与品类销售表现，并支持未来扩展来料管理能力。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8kcsC",
+          "name": "softCta",
+          "width": "fill_container",
+          "height": 240,
+          "fill": "#13315A",
+          "cornerRadius": 20,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D92"
+          },
+          "gap": 20,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "cREvf",
+              "name": "ctaCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "txuO1",
+                  "name": "ctaTitle",
+                  "fill": "#FFFFFF",
+                  "content": "预约门店数字化方案咨询",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "cKIr2",
+                  "name": "ctaDesc",
+                  "fill": "#D8E4F8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "告诉我们你的门店数量、出餐流程和经营目标，我们会给出系统模块和上线节奏建议。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ZQLOL",
+                  "name": "ctaBtn",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#6A90FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#456BDE",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#C9D9FF99"
+                  },
+                  "padding": [
+                    0,
+                    22
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8VzU3",
+                      "name": "ctaBtnTxt",
+                      "fill": "#FFFFFF",
+                      "content": "立即咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qXzCy",
+              "name": "ctaImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "s_tsuchiya",
+                "link": "https://unsplash.com/@s_tsuchiya",
+                "author": "Se. Tsuchiya"
+              },
+              "clip": true,
+              "width": 320,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771112370085.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CLTAe",
+      "x": 3600,
+      "y": 0,
+      "name": "Product/comWeb",
+      "width": 1280,
+      "height": 3000,
+      "fill": "#070F1F",
+      "layout": "vertical",
+      "gap": 28,
+      "padding": [
+        28,
+        36,
+        36,
+        36
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "amsFL",
+          "name": "comTop",
+          "width": "fill_container",
+          "height": 72,
+          "padding": [
+            0,
+            8
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ekv1A",
+              "name": "brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pyt7N",
+                  "name": "logoBox",
+                  "width": 44,
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#89B7FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#2E5CE6",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ERZMN",
+                      "name": "logoWord",
+                      "fill": "#FFFFFF",
+                      "content": "iV",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NKRvv",
+                  "name": "brandText",
+                  "fill": "#F3F7FF",
+                  "content": "iViolet Product",
+                  "fontFamily": "Inter",
+                  "fontSize": 26,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "suly0",
+              "name": "backBtn",
+              "height": 40,
+              "fill": "#162A4F",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#83A3E3"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WN0a9",
+                  "name": "backTxt",
+                  "fill": "#E7ECF8",
+                  "content": "← 返回首页",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nF8iD",
+          "name": "comHero",
+          "width": "fill_container",
+          "height": 388,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#08101F",
+                "position": 0
+              },
+              {
+                "color": "#0C1C3A",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 24,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#7F97CC52"
+          },
+          "gap": 24,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "tgUrQ",
+              "name": "heroCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6yQsa",
+                  "name": "heroTag",
+                  "fill": "#A7D4FF",
+                  "content": "网站与 App 增长方案",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "z4hOe",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "一般电子商务网站，展示型网站及手机app开发",
+                  "lineHeight": 1.25,
+                  "fontFamily": "Inter",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "777Wq",
+                  "name": "heroDesc",
+                  "fill": "#D7E2F4",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "为您原有的展示型网站增加电子商务功能，将网站流量转变为价值。",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Mbec5",
+              "name": "heroImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jpwho",
+                "link": "https://unsplash.com/@jpwho",
+                "author": "Jiwoo Park"
+              },
+              "clip": true,
+              "width": 460,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771112411342.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 18
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ba6km",
+          "name": "comFeat",
+          "width": "fill_container",
+          "fill": "#0D1A32",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#355A8F80"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "MDbWn",
+              "name": "featEyebrow",
+              "fill": "#7FA4FF",
+              "content": "核心特点",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "tHxV9",
+              "name": "featTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "从品牌展示到交易转化的一体化线上增长体验",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "DFRDR",
+              "name": "featRows",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8vQiz",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "1IDar",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2SFyU",
+                          "name": "featImg1",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112889520.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "jTlSS",
+                          "name": "card1Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "电子商务功能",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sgqUt",
+                          "name": "card1Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持多种付款方式，包括微信和支付宝，快速打通线上交易闭环。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3Glc5",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "T8Y91",
+                          "name": "featImg2",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112897407.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "Kj7ua",
+                          "name": "card2Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "原有网站定制化改造",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ggI9J",
+                          "name": "card2Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "重构信息架构与视觉表达，补齐你真正需要的业务功能。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uXLdG",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iBOMC",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SPViN",
+                          "name": "featImg3",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112904780.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "xgd8S",
+                          "name": "card3Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "让更多人知道您的网站",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DmlZ4",
+                          "name": "card3Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "提供成熟的网站营销方案，提升搜索曝光和站内转化效率。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wzUYj",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#122645",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#3A5D9299"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "9oSiu",
+                          "name": "featImg4",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 88,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771112911561.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "text",
+                          "id": "WcBuh",
+                          "name": "card4Title",
+                          "fill": "#F4F8FF",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "支持安卓与 iOS App",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sj1lv",
+                          "name": "card4Body",
+                          "fill": "#C5D2EA",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "基于成熟跨端技术开发 App，降低投入并缩短上线周期。",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "t8jwt",
+          "name": "comFunc",
+          "width": "fill_container",
+          "fill": "#0A152B",
+          "cornerRadius": 22,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D9299"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            22,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "NNE5p",
+              "name": "funcEyebrow",
+              "fill": "#7FA4FF",
+              "content": "功能模块",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "DZXR8",
+              "name": "funcTitle",
+              "fill": "#F3F7FF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "覆盖官网、商城与移动端的多端产品能力",
+              "lineHeight": 1.25,
+              "fontFamily": "Inter",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "JD1Fm",
+              "name": "funcList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HxI42",
+                  "name": "fn1",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FU5b4",
+                      "name": "fn1Title",
+                      "fill": "#F3F7FF",
+                      "content": "展示型网站开发",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MhFIs",
+                      "name": "fn1Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "包含公司介绍、产品服务、成功案例与联系方式等核心内容。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wbgbK",
+                  "name": "fn2",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oR42C",
+                      "name": "fn2Title",
+                      "fill": "#F3F7FF",
+                      "content": "电子商务网站开发",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "F4PTH",
+                      "name": "fn2Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "在展示型网站基础上增加支付与交易能力，形成可持续收入入口。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tROkZ",
+                  "name": "fn3",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wvHp7",
+                      "name": "fn3Title",
+                      "fill": "#F3F7FF",
+                      "content": "手机 App 开发",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZbhkQ",
+                      "name": "fn3Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "根据业务需求同步开发安卓和 iOS 应用，保障体验一致性。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vyDtX",
+                  "name": "fn4",
+                  "width": "fill_container",
+                  "fill": "#11284A",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#3E68A285"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PVNyl",
+                      "name": "fn4Title",
+                      "fill": "#F3F7FF",
+                      "content": "电子商务网站促销",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uXUWS",
+                      "name": "fn4Body",
+                      "fill": "#C9D5EA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "通过内容和投放策略提高在搜索平台上的曝光率与获客效率。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JTMzi",
+          "name": "comCta",
+          "width": "fill_container",
+          "height": 240,
+          "fill": "#13315A",
+          "cornerRadius": 20,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#3A5D92"
+          },
+          "gap": 20,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "qNpWa",
+              "name": "ctaCopy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r2yZ1",
+                  "name": "ctaTitle",
+                  "fill": "#FFFFFF",
+                  "content": "预约网站与 App 方案咨询",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "wNXEV",
+                  "name": "ctaDesc",
+                  "fill": "#D8E4F8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "告诉我们你的行业和目标，我们将给出从展示到转化的功能与排期建议。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 19,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "QSL1M",
+                  "name": "ctaBtn",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#6A90FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#456BDE",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 999,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#C9D9FF99"
+                  },
+                  "padding": [
+                    0,
+                    22
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UUPjc",
+                      "name": "ctaBtnTxt",
+                      "fill": "#FFFFFF",
+                      "content": "立即咨询",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DjWql",
+              "name": "ctaImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "s_tsuchiya",
+                "link": "https://unsplash.com/@s_tsuchiya",
+                "author": "Se. Tsuchiya"
+              },
+              "clip": true,
+              "width": 320,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771112423188.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 14
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

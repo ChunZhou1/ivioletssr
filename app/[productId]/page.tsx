@@ -1,4 +1,6 @@
 import { ProductContent } from "components/product/ProductContent";
+import type { CharactDataType } from "components/product/Charact";
+import type { FunctionDataType } from "components/product/Function";
 import {
   title1Inn,
   title2Inn,
@@ -14,34 +16,96 @@ import {
   functionDataForGerWeb,
 } from "content";
 
-const productMap = {
+type ProductId = "proWeb" | "softwareDev" | "comWeb";
+
+type ProductConfig = {
+  heroTag: string;
+  title1: string;
+  title2: string;
+  heroImage: string;
+  charactSectionTitle: string;
+  charactDataArray: CharactDataType[];
+  functionSectionTitle: string;
+  functionDataArray: FunctionDataType[];
+  ctaTitle: string;
+  ctaDescription: string;
+  ctaImage: string;
+};
+
+const featureImageMap: Record<ProductId, string[]> = {
+  proWeb: [
+    "/product/proWeb/feature-1.png",
+    "/product/proWeb/feature-2.png",
+    "/product/proWeb/feature-3.png",
+    "/product/proWeb/feature-4.png",
+  ],
+  softwareDev: [
+    "/product/softwareDev/feature-1.png",
+    "/product/softwareDev/feature-2.png",
+    "/product/softwareDev/feature-3.png",
+    "/product/softwareDev/feature-4.png",
+  ],
+  comWeb: [
+    "/product/comWeb/feature-1.png",
+    "/product/comWeb/feature-2.png",
+    "/product/comWeb/feature-3.png",
+    "/product/comWeb/feature-4.png",
+  ],
+};
+
+const withFeatureImages = (
+  charactDataArray: { title: string; content: string }[],
+  featureImages: string[],
+): CharactDataType[] =>
+  charactDataArray.map((item, index) => ({
+    ...item,
+    imageSrc: featureImages[index] ?? featureImages[featureImages.length - 1],
+    imageAlt: item.title,
+  }));
+
+const productMap: Record<ProductId, ProductConfig> = {
   proWeb: {
+    heroTag: "旅馆业数字化解决方案",
     title1: title1Inn,
     title2: title2Inn,
-    titlePic: "/inn1.jpg",
-    headerPic: "/bannar22.jpg",
-    charactDataArray: CharactDataForInn,
+    heroImage: "/product/proWeb/hero.jpg",
+    charactSectionTitle: "围绕入住转化与运营效率重构产品体验",
+    charactDataArray: withFeatureImages(CharactDataForInn, featureImageMap.proWeb),
+    functionSectionTitle: "覆盖从展示、下单到运营管理的完整链路",
     functionDataArray: functionDataForInn,
+    ctaTitle: "预约 30 分钟方案沟通",
+    ctaDescription: "告诉我们你的物业规模与运营目标，我们将提供可执行功能清单与排期建议。",
+    ctaImage: "/product/proWeb/cta.jpg",
   },
   softwareDev: {
+    heroTag: "餐饮业数字化解决方案",
     title1: title1Rest,
     title2: title2Rest,
-    titlePic: "/rest1.jpg",
-    headerPic: "/bannar33.jpg",
-    charactDataArray: CharactDataForRest,
+    heroImage: "/product/softwareDev/hero.png",
+    charactSectionTitle: "围绕获客、点单与履约效率打造门店增长引擎",
+    charactDataArray: withFeatureImages(CharactDataForRest, featureImageMap.softwareDev),
+    functionSectionTitle: "从前台点单到后厨协作与经营分析的完整功能集",
     functionDataArray: functionDataForRest,
+    ctaTitle: "预约门店数字化方案咨询",
+    ctaDescription: "告诉我们你的门店数量、出餐流程和经营目标，我们会给出系统模块和上线节奏建议。",
+    ctaImage: "/product/softwareDev/cta.png",
   },
   comWeb: {
+    heroTag: "网站与 App 增长方案",
     title1: title1GerWeb,
     title2: title2GerWeb,
-    titlePic: "/gerWeb.jpg",
-    headerPic: "/bannar11.jpg",
-    charactDataArray: CharactDataForGerWeb,
+    heroImage: "/product/comWeb/hero.png",
+    charactSectionTitle: "从品牌展示到交易转化的一体化线上增长体验",
+    charactDataArray: withFeatureImages(CharactDataForGerWeb, featureImageMap.comWeb),
+    functionSectionTitle: "覆盖官网、商城与移动端的多端产品能力",
     functionDataArray: functionDataForGerWeb,
+    ctaTitle: "预约网站与 App 方案咨询",
+    ctaDescription: "告诉我们你的行业和目标，我们将给出从展示到转化的功能与排期建议。",
+    ctaImage: "/product/comWeb/cta.png",
   },
 };
 
-const defaultProductId = "proWeb";
+const defaultProductId: ProductId = "proWeb";
 
 type ProductPageProps = {
   params: {
@@ -54,18 +118,21 @@ export function generateStaticParams() {
 }
 
 export default function ProductPage({ params }: ProductPageProps) {
-  const productData =
-    productMap[params.productId as keyof typeof productMap] ??
-    productMap[defaultProductId];
+  const productData = productMap[params.productId as ProductId] ?? productMap[defaultProductId];
 
   return (
     <ProductContent
+      heroTag={productData.heroTag}
       title1={productData.title1}
       title2={productData.title2}
-      titlePic={productData.titlePic}
-      headerPic={productData.headerPic}
+      heroImage={productData.heroImage}
+      charactSectionTitle={productData.charactSectionTitle}
       charactDataArray={productData.charactDataArray}
+      functionSectionTitle={productData.functionSectionTitle}
       functionDataArray={productData.functionDataArray}
+      ctaTitle={productData.ctaTitle}
+      ctaDescription={productData.ctaDescription}
+      ctaImage={productData.ctaImage}
     />
   );
 }

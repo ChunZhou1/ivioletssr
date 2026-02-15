@@ -1,68 +1,52 @@
 "use client";
 
 import React from "react";
-import { Box, Stack, Link } from "@mui/material";
+import { Box } from "@mui/material";
 import { Header } from "./Header";
 import { Title } from "./Title";
 import { Charact } from "./Charact";
 import { Function } from "./Function";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-
+import { CallToAction } from "./CallToAction";
 import { CharactDataType } from "./Charact";
 import { FunctionDataType } from "./Function";
-
-import { useRouter } from "next/navigation";
+import { productSharedSx } from "./styles";
 
 type ProductContentProps = {
+  heroTag: string;
   title1: string;
   title2: string;
-  titlePic: string;
-  headerPic: string;
+  heroImage: string;
+  charactSectionTitle: string;
   charactDataArray: CharactDataType[];
+  functionSectionTitle: string;
   functionDataArray: FunctionDataType[];
+  ctaTitle: string;
+  ctaDescription: string;
+  ctaImage: string;
 };
 
 export const ProductContent = ({
+  heroTag,
   title1,
   title2,
-  titlePic,
-  headerPic,
+  heroImage,
+  charactSectionTitle,
   charactDataArray,
+  functionSectionTitle,
   functionDataArray,
+  ctaTitle,
+  ctaDescription,
+  ctaImage,
 }: ProductContentProps) => {
-  const router = useRouter();
   return (
-    <Box style={{ position: "relative" }}>
-      <Stack
-        direction="row"
-        alignItems="center"
-        sx={{ position: "fixed", left: "1%", top: "65%" }}
-      >
-        <KeyboardArrowLeftIcon sx={{ fontSize: "60px" }} />
-        <Link
-          variant="h4"
-          sx={{ fontWeight: 700 }}
-          color={"0345fc"}
-          underline="none"
-          href="##"
-          onClick={(event) => {
-            event.preventDefault();
-            router.push("/");
-          }}
-        >
-          返回
-        </Link>
-      </Stack>
-      <Stack
-        direction="column"
-        spacing={12}
-        sx={{ backgroundColor: "#dae4f5" }}
-      >
-        <Header headerPic={headerPic} />
-        <Title title1={title1} title2={title2} titlePic={titlePic} />
-        <Charact charactDataArray={charactDataArray} />
-        <Function functionDataArray={functionDataArray} />
-      </Stack>
+    <Box component="main" sx={productSharedSx.pageRoot}>
+      <Box sx={productSharedSx.sectionInner}>
+        <Header />
+        <Title heroTag={heroTag} title1={title1} title2={title2} titlePic={heroImage} />
+        <Charact charactDataArray={charactDataArray} sectionTitle={charactSectionTitle} />
+        <Function functionDataArray={functionDataArray} sectionTitle={functionSectionTitle} />
+        <CallToAction description={ctaDescription} imageSrc={ctaImage} title={ctaTitle} />
+      </Box>
     </Box>
   );
 };

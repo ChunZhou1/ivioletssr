@@ -1,78 +1,63 @@
-"use client";
-
 import React from "react";
-import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
-import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-
-import { useIsMobile } from "hooks/common/useIsMobile";
+import { Box, Typography } from "@mui/material";
+import Image from "next/image";
+import { productFeatureSx } from "./styles";
 
 export type CharactDataType = {
-  icon?: React.ReactNode;
   title: string;
   content: string;
+  imageSrc: string;
+  imageAlt?: string;
 };
 
 type CharactType = {
+  sectionTitle: string;
   charactDataArray: CharactDataType[];
 };
 
-export const Charact = ({ charactDataArray }: CharactType) => {
+export const Charact = ({ sectionTitle, charactDataArray }: CharactType) => {
   return (
-    <Stack direction="column" alignItems="center" spacing={5}>
-      <Typography variant="h2" sx={{ color: "#0345fc", fontWeight: 700 }}>
-        主要特点
+    <Box sx={productFeatureSx.section}>
+      <Typography sx={productFeatureSx.eyebrow}>核心特点</Typography>
+      <Typography component="h2" sx={productFeatureSx.title}>
+        {sectionTitle}
       </Typography>
-      <Grid container>
-        {charactDataArray &&
-          charactDataArray.map((item) => (
-            <CharactItem
-              key={item.title}
-              icon={item.icon}
-              content={item.content}
-              title={item.title}
-            />
-          ))}
-      </Grid>
-    </Stack>
+      <Box sx={productFeatureSx.grid}>
+        {charactDataArray.map((item) => (
+          <CharactItem
+            key={item.title}
+            content={item.content}
+            imageAlt={item.imageAlt}
+            imageSrc={item.imageSrc}
+            title={item.title}
+          />
+        ))}
+      </Box>
+    </Box>
   );
 };
 
 type CharactItemProps = {
-  icon?: React.ReactNode;
   title: string;
   content: string;
+  imageSrc: string;
+  imageAlt?: string;
 };
-const CharactItem = ({ icon, title, content }: CharactItemProps) => {
-  const isMobile = useIsMobile();
+
+const CharactItem = ({ title, content, imageSrc, imageAlt }: CharactItemProps) => {
   return (
-    <Grid item sm={12} md={5.5} mt={10}>
-      <Stack
-        direction="column"
-        alignItems="center"
-        sx={{ marginLeft: isMobile ? "0%" : "15%" }}
-      >
-        <Stack direction="row" alignItems="flex-start" spacing={2}>
-          {icon ? (
-            icon
-          ) : (
-            <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />
-          )}
-          <Stack direction="column" alignItems="flex-start" spacing={4}>
-            <Typography
-              variant="h4"
-              sx={{ fontWeight: 700, lineHeight: "56px" }}
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="h5"
-              sx={{ fontWeight: 400, lineHeight: "46px" }}
-            >
-              {content}
-            </Typography>
-          </Stack>
-        </Stack>
-      </Stack>
-    </Grid>
+    <Box sx={productFeatureSx.card}>
+      <Box sx={productFeatureSx.cardImage}>
+        <Image
+          src={imageSrc}
+          fill
+          alt={imageAlt ?? title}
+          sizes="(max-width: 900px) 100vw, 50vw"
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
+      <Typography sx={productFeatureSx.cardTitle}>{title}</Typography>
+      <Typography sx={productFeatureSx.cardBody}>{content}</Typography>
+    </Box>
   );
 };

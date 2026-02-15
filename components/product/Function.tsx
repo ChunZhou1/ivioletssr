@@ -1,44 +1,30 @@
 import React from "react";
-import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Typography } from "@mui/material";
+import { productFunctionSx } from "./styles";
+
 export type FunctionDataType = {
   title: string;
   content: string;
 };
 
 type FunctionProps = {
+  sectionTitle: string;
   functionDataArray: FunctionDataType[];
 };
 
-export const Function = ({ functionDataArray }: FunctionProps) => {
+export const Function = ({ sectionTitle, functionDataArray }: FunctionProps) => {
   return (
-    <Stack direction="column" alignItems="center" spacing={8}>
-      <Typography variant="h2" sx={{ color: "#0345fc", fontWeight: 700 }}>
-        主要功能
+    <Box sx={productFunctionSx.section}>
+      <Typography sx={productFunctionSx.eyebrow}>功能模块</Typography>
+      <Typography component="h2" sx={productFunctionSx.title}>
+        {sectionTitle}
       </Typography>
-      <Grid container alignItems="flex-start">
-        <Grid item sm={0} md={1}></Grid>
-        <Grid item sm={12} md={5}>
-          <Image
-            src={"/inn2.jpg"}
-            height={300}
-            width={400}
-            alt="inn2.jpg"
-          />
-        </Grid>
-        <Grid item sm={12} md={5}>
-          {functionDataArray &&
-            functionDataArray.map((item) => (
-              <FunctionItem
-                key={item.title}
-                title={item.title}
-                content={item.content}
-              />
-            ))}
-        </Grid>
-        <Grid item sm={0} md={1}></Grid>
-      </Grid>
-    </Stack>
+      <Box sx={productFunctionSx.list}>
+        {functionDataArray.map((item) => (
+          <FunctionItem key={item.title} content={item.content} title={item.title} />
+        ))}
+      </Box>
+    </Box>
   );
 };
 
@@ -46,15 +32,12 @@ type FunctionItemProps = {
   title: string;
   content: string;
 };
+
 const FunctionItem = ({ title, content }: FunctionItemProps) => {
   return (
-    <Stack direction="column" alignItems="flex-start" spacing={3} mb={6}>
-      <Typography variant="h5" sx={{ fontWeight: 700 }}>
-        {title}
-      </Typography>
-      <Typography variant="h5" sx={{ fontWeight: 400 }}>
-        {content}
-      </Typography>
-    </Stack>
+    <Box sx={productFunctionSx.item}>
+      <Typography sx={productFunctionSx.itemTitle}>{title}</Typography>
+      <Typography sx={productFunctionSx.itemBody}>{content}</Typography>
+    </Box>
   );
 };

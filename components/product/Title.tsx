@@ -1,37 +1,35 @@
 import React from "react";
-import { Stack, GridLegacy as Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
+import { productHeroSx } from "./styles";
 
 export type TitleProps = {
+  heroTag: string;
   title1: string;
   title2: string;
   titlePic: string;
 };
-export const Title = ({ title1, title2, titlePic }: TitleProps) => {
+export const Title = ({ heroTag, title1, title2, titlePic }: TitleProps) => {
   return (
-    <Grid container>
-      <Grid item sm={12} md={1}></Grid>
-      <Grid item sm={12} md={5}>
-        <Stack direction="column" alignItems="center">
-          <Stack direction="column" alignItems="flex-start" spacing={3}>
-            <Typography
-              variant="h2"
-              sx={{ fontWeight: 700, lineHeight: "100px" }}
-            >
-              {title1}
-            </Typography>
-            <Typography variant="h4" sx={{ lineHeight: "56px" }}>
-              {title2}
-            </Typography>
-          </Stack>
-        </Stack>
-      </Grid>
-      <Grid item sm={12} md={5}>
-        <Stack direction="column" alignItems="center">
-          <Image src={titlePic} height={300} width={400} alt="Title" />
-        </Stack>
-      </Grid>
-      <Grid item sm={12} md={1}></Grid>
-    </Grid>
+    <Box sx={productHeroSx.card}>
+      <Box sx={productHeroSx.copy}>
+        <Typography sx={productHeroSx.tag}>{heroTag}</Typography>
+        <Typography component="h1" sx={productHeroSx.title}>
+          {title1}
+        </Typography>
+        <Typography sx={productHeroSx.desc}>{title2}</Typography>
+      </Box>
+
+      <Box sx={productHeroSx.imageCard}>
+        <Image
+          src={titlePic}
+          fill
+          priority
+          alt={title1}
+          sizes="(max-width: 1000px) 100vw, 400px"
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
+    </Box>
   );
 };

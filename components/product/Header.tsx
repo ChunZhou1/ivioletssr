@@ -1,15 +1,23 @@
 import React from "react";
-import { Stack } from "@mui/material";
-import Image from "next/image";
+import NextLink from "next/link";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { Box, Button, Stack, Typography } from "@mui/material";
+import { productHeaderSx } from "./styles";
 
-type HeaderProps = {
-  headerPic: string;
-};
-
-export const Header = ({ headerPic }: HeaderProps) => {
+export const Header = () => {
   return (
-    <Stack direction="column" spacing={6} sx={{ width: "100%" }}>
-      <Image src={headerPic} height={300} width={400} alt="headerImg" />
-    </Stack>
+    <Box sx={productHeaderSx.topBar}>
+      <Stack direction="row" alignItems="center" spacing={2} sx={productHeaderSx.brandGroup}>
+        <Box sx={productHeaderSx.logoBadge}>
+          <Typography sx={productHeaderSx.logoWord}>iV</Typography>
+          <AutoAwesomeIcon sx={productHeaderSx.logoSpark} />
+        </Box>
+        <Typography sx={productHeaderSx.brandText}>iViolet Product</Typography>
+      </Stack>
+
+      <Button component={NextLink} href="/" sx={productHeaderSx.backButton}>
+        ← 返回首页
+      </Button>
+    </Box>
   );
 };
