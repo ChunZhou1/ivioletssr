@@ -1,5 +1,4 @@
 import type { CSSProperties } from "react";
-import { defaultLocale, type LocaleRecord } from "constant/locale";
 
 type AdminPageCopy = {
   fallbackUserName: string;
@@ -13,44 +12,17 @@ type AdminPageCopy = {
   signOutButtonText: string;
 };
 
-export const adminPageCopyByLocale: LocaleRecord<AdminPageCopy> = {
-  "zh-CN": {
-    fallbackUserName: "用户",
-    pageTitle: "Admin",
-    loggedInTitle: "已登录",
-    loggedInDescriptionPrefix: "欢迎，",
-    loggedInDescriptionSuffix: "。你现在看到的是登录后内容。",
-    loggedOutTitle: "未登录",
-    loggedOutDescription: "请先点击右上角按钮使用 Google 登录，登录后会显示不同内容。",
-    signInButtonText: "使用 Google 登录",
-    signOutButtonText: "退出登录",
-  },
-  "zh-TW": {
-    fallbackUserName: "使用者",
-    pageTitle: "Admin",
-    loggedInTitle: "已登入",
-    loggedInDescriptionPrefix: "歡迎，",
-    loggedInDescriptionSuffix: "。你現在看到的是登入後內容。",
-    loggedOutTitle: "未登入",
-    loggedOutDescription: "請先點擊右上角按鈕使用 Google 登入，登入後會顯示不同內容。",
-    signInButtonText: "使用 Google 登入",
-    signOutButtonText: "登出",
-  },
-  en: {
-    fallbackUserName: "User",
-    pageTitle: "Admin",
-    loggedInTitle: "Signed in",
-    loggedInDescriptionPrefix: "Welcome, ",
-    loggedInDescriptionSuffix: ". You are now seeing authenticated content.",
-    loggedOutTitle: "Signed out",
-    loggedOutDescription:
-      "Click the top-right button to sign in with Google. Content will change after authentication.",
-    signInButtonText: "Sign in with Google",
-    signOutButtonText: "Sign out",
-  },
+export const adminPageCopy: AdminPageCopy = {
+  fallbackUserName: "用户",
+  pageTitle: "Admin",
+  loggedInTitle: "已登录",
+  loggedInDescriptionPrefix: "欢迎，",
+  loggedInDescriptionSuffix: "。你现在看到的是登录后内容。",
+  loggedOutTitle: "未登录",
+  loggedOutDescription: "请先点击右上角按钮使用 Google 登录，登录后会显示不同内容。",
+  signInButtonText: "使用 Google 登录",
+  signOutButtonText: "退出登录",
 };
-
-export const adminPageCopy = adminPageCopyByLocale[defaultLocale];
 
 export const adminPageStyles: Record<string, CSSProperties> = {
   main: {

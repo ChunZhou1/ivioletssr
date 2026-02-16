@@ -25,7 +25,15 @@ export function middleware(request: NextRequest) {
 
   const pathSegments = pathname.split("/").filter(Boolean);
   const firstSegment = pathSegments[0];
-  const localeFromPath = normalizeLocale(firstSegment);
+  const localeFromFirstSegment = normalizeLocale(firstSegment);
+
+  if (localeFromFirstSegment && pathSegments[1] === "admin") {
+    const redirectUrl = request.nextUrl.clone();
+    redirectUrl.pathname = "/admin";
+    return NextResponse.redirect(redirectUrl);
+  }
+
+  const localeFromPath = localeFromFirstSegment;
 
   if (localeFromPath) {
     if (firstSegment !== localeFromPath) {
