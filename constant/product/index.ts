@@ -290,7 +290,7 @@ const zhTwProductSeeds: Record<ProductId, ProductSeed> = {
     ctaTitle: "預約 30 分鐘方案溝通",
     ctaDescription: "告訴我們你的物業規模與營運目標，我們將提供可執行功能清單與排期建議。",
     consultSubject: "諮詢旅館業方案",
-    charactDataArray:[
+    charactDataArray: [
       {
         title: "在您自己的網站上用戶可進行訂房操作，不需要向第三方平台付手續費",
         content: "個性化的頁面提升自己物業的價值，向客戶全面推介自己的物業，將用戶掌握在你的手裡",
@@ -307,7 +307,32 @@ const zhTwProductSeeds: Record<ProductId, ProductSeed> = {
         title: "支持多種付款方式，保護您的利益，減少您的工作量",
         content: "可以不需用戶進行預授權，自動對用戶信用卡進行校驗但不扣款；在用戶入住三天前進行自動扣款，同時實現免押金入住，極大提升用戶體驗，",
       },
-    ]
+    ],
+    functionDataArray: [
+      {
+        title: "房間和物業展示功能",
+        content: "物業歷史、周邊交通、設施、房型與服務完整展示，支援輪播圖與影片呈現",
+      },
+      {
+        title: "訂房功能",
+        content:
+          "支援信用卡、微信、支付寶等多種付款方式，支援預先付款與入住前三天扣款；支援信用卡自動校驗與免押金入住，若發生損壞可自動扣款；亦支援 POS 機與伺服器連網運作，免繳 POS 月租費",
+      },
+      {
+        title: "強大的訂單管理功能",
+        content: "支援當前入住與即將入住清單、調房、取消訂單扣款，以及手動或自動退款",
+      },
+      {
+        title: "強大的促銷功能",
+        content:
+          "支援尾房促銷、活動促銷、依居住時間自動折扣、依入住率自動折扣，以及針對貴賓用戶的專屬折扣",
+      },
+      {
+        title: "強大的同步功能",
+        content:
+          "支援與 Airbnb、Booking 等第三方平台自動同步，同步時間小於三分鐘，徹底杜絕 OverBooking",
+      },
+    ],
   },
   softwareDev: {
     ...zhCnProductSeeds.softwareDev,
@@ -317,6 +342,47 @@ const zhTwProductSeeds: Record<ProductId, ProductSeed> = {
     ctaTitle: "預約門店數位化方案諮詢",
     ctaDescription: "告訴我們你的門店數量、出餐流程和經營目標，我們會給出系統模組和上線節奏建議。",
     consultSubject: "諮詢餐飲軟體方案",
+    charactDataArray: [
+      {
+        title: "多元化的獲客方式",
+        content: "用戶可透過網站點單、現場自助點單、現金點單等方式下單，提升便利性與營運效率",
+      },
+      {
+        title: "一體化管理軟體，提升效率並降低人力成本",
+        content: "從用戶點單、店員製作到通知取貨，全流程自動化管理，提升效率並減少人力壓力",
+      },
+      {
+        title: "支援外賣資料匯入，銷售狀況一目了然",
+        content: "整合外賣平台與自有渠道的銷售數據，讓你快速掌握整體經營表現",
+      },
+      {
+        title: "支援底層開發與深度客製化",
+        content: "可依你的實際需求客製功能，不再被不需要的功能綁住，也不再缺少關鍵能力",
+      },
+    ],
+    functionDataArray: [
+      {
+        title: "建立銷售網站",
+        content: "支援商品展示、線上支付、即時付款與到店付款，並提供促銷與會員功能",
+      },
+      {
+        title: "現場無接觸自助點單",
+        content: "用戶可透過觸控螢幕下單並於 POS 機付款，減輕店員負擔並提升出餐效率",
+      },
+      {
+        title: "工作流程自動管理",
+        content: "用戶付款後系統自動通知店員製作，製作完成後再即時通知用戶取餐",
+      },
+      {
+        title: "強大的用戶通知功能",
+        content:
+          "用戶可在網站即時查看訂單進度，也可透過店內大螢幕追蹤狀態，提升體驗並降低重複詢問",
+      },
+      {
+        title: "外賣資訊匯入與後台管理",
+        content: "可分析不同品項在不同時段的銷售表現，並可進一步擴充進貨與來料管理能力",
+      },
+    ],
   },
   comWeb: {
     ...zhCnProductSeeds.comWeb,
@@ -326,6 +392,44 @@ const zhTwProductSeeds: Record<ProductId, ProductSeed> = {
     ctaTitle: "預約網站與 App 方案諮詢",
     ctaDescription: "告訴我們你的行業和目標，我們將給出從展示到轉化的功能與排期建議。",
     consultSubject: "諮詢網站與App方案",
+    charactDataArray: [
+      {
+        title: "電子商務功能",
+        content: "支援多種付款方式，包含微信與支付寶",
+      },
+      {
+        title: "為既有網站提供客製化升級",
+        content:
+          "如果你對現有網站不滿意，我們可重新設計並補齊所需功能；高客製化能力是我們的核心優勢",
+      },
+      {
+        title: "讓更多人看見你的網站",
+        content: "提供成熟的網站行銷方案，提升網站曝光度與品牌可見度",
+      },
+      {
+        title: "從網站到手機 App，支援 Android 與 iOS",
+        content:
+          "若需開發手機 App，我們可採用成熟的 React Native 架構，同步覆蓋 Android 與 iOS，降低整體投入成本",
+      },
+    ],
+    functionDataArray: [
+      {
+        title: "展示型網站開發",
+        content: "涵蓋公司介紹、產品與服務、成功案例與聯絡方式等內容，完整呈現企業形象",
+      },
+      {
+        title: "電子商務網站開發",
+        content: "在展示型網站基礎上加入支付與交易流程，直接承接流量轉化",
+      },
+      {
+        title: "手機 App 開發",
+        content: "依照你的需求開發 Android 與 iOS 平台 App，維持一致體驗與效能",
+      },
+      {
+        title: "電子商務網站促銷",
+        content: "提供行銷策略與執行方案，提升在 Google 搜尋平台的曝光與觸達",
+      },
+    ],
   },
 };
 
@@ -342,6 +446,55 @@ const enProductSeeds: Record<ProductId, ProductSeed> = {
     ctaDescription:
       "Share your property scale and operation goals, and we will provide an executable feature scope and implementation timeline.",
     consultSubject: "Consulting for hospitality solution",
+    charactDataArray: [
+      {
+        title: "Direct booking on your own website without third-party commissions",
+        content:
+          "A personalized website increases your property value, showcases your rooms and services, and helps you keep direct customer ownership.",
+      },
+      {
+        title: "Self-developed backend to eliminate overbooking",
+        content:
+          "Integrates seamlessly with third-party channel managers and syncs booking status in under three minutes to prevent overbooking.",
+      },
+      {
+        title: "Flexible promotion strategies to maximize property value",
+        content:
+          "Supports last-room offers, stay-length promotions, and occupancy-based automated discounts to improve booking conversion.",
+      },
+      {
+        title: "Multiple payment options that protect revenue and reduce manual work",
+        content:
+          "Supports card verification without immediate charging, automatic pre-arrival charge three days before check-in, and deposit-free check-in for better guest experience.",
+      },
+    ],
+    functionDataArray: [
+      {
+        title: "Property and room presentation",
+        content:
+          "Showcase property story, surrounding transport, facilities, room types, and services with image carousels and video content.",
+      },
+      {
+        title: "Booking and payment",
+        content:
+          "Supports credit card, WeChat Pay, Alipay, advance payments, and pre-arrival charging. Includes automatic card validation, deposit-free check-in, and optional POS-server integration.",
+      },
+      {
+        title: "Robust order management",
+        content:
+          "Manage current stays and upcoming check-ins, room reassignment, cancellation charge handling, and both manual and automatic refunds.",
+      },
+      {
+        title: "Advanced promotion engine",
+        content:
+          "Supports last-room campaigns, event campaigns, stay-duration discounts, occupancy-driven pricing, and VIP-targeted promotions.",
+      },
+      {
+        title: "Fast multi-channel synchronization",
+        content:
+          "Auto-syncs with platforms like Airbnb and Booking in under three minutes, significantly reducing the risk of overbooking.",
+      },
+    ],
   },
   softwareDev: {
     ...zhCnProductSeeds.softwareDev,
@@ -355,6 +508,55 @@ const enProductSeeds: Record<ProductId, ProductSeed> = {
     ctaDescription:
       "Tell us your number of stores, fulfillment flow, and business goals. We will suggest the right modules and launch phases.",
     consultSubject: "Consulting for restaurant software solution",
+    charactDataArray: [
+      {
+        title: "Multiple customer acquisition channels",
+        content:
+          "Customers can place orders via website, in-store self-service, or cash counter, improving convenience and operational efficiency.",
+      },
+      {
+        title: "Integrated management system to reduce labor cost",
+        content:
+          "From order placement and production to pickup notification, the full workflow is automated to improve speed and consistency.",
+      },
+      {
+        title: "Delivery data integration with full sales visibility",
+        content:
+          "Combines third-party delivery data with in-store sales so you can clearly track overall performance in one place.",
+      },
+      {
+        title: "Deep custom development when standard tools are not enough",
+        content:
+          "We build around your real requirements, so you are not forced to use unnecessary features while missing critical ones.",
+      },
+    ],
+    functionDataArray: [
+      {
+        title: "Commerce website setup",
+        content:
+          "Includes product presentation, payment support, instant or pay-at-store options, plus promotions and membership features.",
+      },
+      {
+        title: "In-store contactless self-ordering",
+        content:
+          "Customers order through touch screens and complete payment on POS terminals, reducing cashier workload and wait time.",
+      },
+      {
+        title: "Automated workflow orchestration",
+        content:
+          "After payment, staff are notified instantly to prepare the order, and customers are notified again when it is ready.",
+      },
+      {
+        title: "Powerful customer notification",
+        content:
+          "Customers can track order progress online or via in-store displays, improving experience and reducing repeated status inquiries.",
+      },
+      {
+        title: "Delivery import and strong back-office analytics",
+        content:
+          "Analyze sales by product and time period, with room to extend into procurement and ingredient management in later phases.",
+      },
+    ],
   },
   comWeb: {
     ...zhCnProductSeeds.comWeb,
@@ -368,6 +570,48 @@ const enProductSeeds: Record<ProductId, ProductSeed> = {
     ctaDescription:
       "Share your industry and goals, and we will propose a practical plan from brand showcase to conversion.",
     consultSubject: "Consulting for website and app solution",
+    charactDataArray: [
+      {
+        title: "E-commerce capability",
+        content: "Supports multiple payment methods, including WeChat Pay and Alipay.",
+      },
+      {
+        title: "Customized upgrade for your existing website",
+        content:
+          "Not satisfied with your current site? We can redesign it and add exactly the features you need with high customization.",
+      },
+      {
+        title: "Increase your website visibility",
+        content: "Provide proven website marketing plans to improve online exposure and traffic quality.",
+      },
+      {
+        title: "From website to mobile app, supporting Android and iOS",
+        content:
+          "If you need a mobile app, we use a mature React Native stack to deliver Android and iOS together and lower total investment.",
+      },
+    ],
+    functionDataArray: [
+      {
+        title: "Showcase website development",
+        content:
+          "Build company profile, product and service pages, success stories, and contact channels to present your brand professionally.",
+      },
+      {
+        title: "E-commerce website development",
+        content:
+          "Add payment and transaction flows on top of your showcase site to convert traffic into measurable business outcomes.",
+      },
+      {
+        title: "Mobile app development",
+        content:
+          "Develop Android and iOS apps based on your requirements, with consistent UX across platforms.",
+      },
+      {
+        title: "E-commerce promotion and growth",
+        content:
+          "Provide practical promotion plans to increase visibility and discoverability on search platforms such as Google.",
+      },
+    ],
   },
 };
 
