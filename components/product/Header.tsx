@@ -2,9 +2,16 @@ import React from "react";
 import NextLink from "next/link";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { Box, Button, Link, Stack, Typography } from "@mui/material";
+import { localizePathname, type SupportedLocale } from "constant/locale";
+import { type ProductUiCopy } from "constant/product";
 import { productHeaderSx } from "./styles";
 
-export const Header = () => {
+type HeaderProps = {
+  locale: SupportedLocale;
+  uiCopy: ProductUiCopy;
+};
+
+export const Header = ({ locale, uiCopy }: HeaderProps) => {
   return (
     <Box sx={productHeaderSx.topBar}>
       <Stack direction="row" alignItems="center" spacing={2} sx={productHeaderSx.brandGroup}>
@@ -12,7 +19,7 @@ export const Header = () => {
           <Typography sx={productHeaderSx.logoWord}>iV</Typography>
           <AutoAwesomeIcon sx={productHeaderSx.logoSpark} />
         </Box>
-        <Typography sx={productHeaderSx.brandText}>iViolet Product</Typography>
+        <Typography sx={productHeaderSx.brandText}>{uiCopy.headerBrandText}</Typography>
       </Stack>
 
       <Box sx={productHeaderSx.contactGroup}>
@@ -24,8 +31,12 @@ export const Header = () => {
         </Link>
       </Box>
 
-      <Button component={NextLink} href="/" sx={productHeaderSx.backButton}>
-        ← 返回首页
+      <Button
+        component={NextLink}
+        href={localizePathname("/", locale)}
+        sx={productHeaderSx.backButton}
+      >
+        {uiCopy.backHomeText}
       </Button>
     </Box>
   );

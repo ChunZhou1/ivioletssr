@@ -8,9 +8,16 @@ type CallToActionProps = {
   description: string;
   imageSrc: string;
   consultHref: string;
+  consultButtonText: string;
 };
 
-export const CallToAction = ({ title, description, imageSrc, consultHref }: CallToActionProps) => {
+export const CallToAction = ({
+  title,
+  description,
+  imageSrc,
+  consultHref,
+  consultButtonText,
+}: CallToActionProps) => {
   const ctaButtonSx = {
     ...(consultButtonSx as Record<string, unknown>),
     ...(productCtaSx.button as Record<string, unknown>),
@@ -25,7 +32,7 @@ export const CallToAction = ({ title, description, imageSrc, consultHref }: Call
         <Typography sx={productCtaSx.desc}>{description}</Typography>
         <Box sx={productCtaSx.buttonWrap}>
           <Button component="a" href={consultHref} sx={ctaButtonSx}>
-            立即邮件咨询
+            {consultButtonText}
           </Button>
         </Box>
       </Box>

@@ -11,10 +11,13 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import NextLink from "next/link";
 import React from "react";
-import { serviceContent, type HomeProduct } from "components/home/constant";
+import { type HomePageConstants, type HomeProduct } from "constant/home";
+import { localizePathname, type SupportedLocale } from "constant/locale";
 import { productSx, sharedSx } from "components/home/styles";
 
 type ProductProps = {
+  locale: SupportedLocale;
+  serviceContent: HomePageConstants["serviceContent"];
   products: HomeProduct[];
 };
 
@@ -31,7 +34,11 @@ const renderServiceIcon = (icon: HomeProduct["icon"]) => {
   }
 };
 
-export const Product = ({ products }: ProductProps) => (
+export const Product = ({
+  locale,
+  serviceContent,
+  products,
+}: ProductProps) => (
   <Box component="section" sx={productSx.section}>
     <Box sx={sharedSx.sectionInner}>
       <Typography sx={sharedSx.sectionEyebrow}>{serviceContent.eyebrow}</Typography>
@@ -63,11 +70,11 @@ export const Product = ({ products }: ProductProps) => (
 
             <Link
               component={NextLink}
-              href={item.href}
+              href={localizePathname(item.href, locale)}
               underline="none"
               sx={productSx.cardButton}
             >
-              <span>详细了解</span>
+              <span>{serviceContent.detailButtonText}</span>
               <ArrowForwardRoundedIcon sx={productSx.cardButtonIcon} />
             </Link>
           </Box>

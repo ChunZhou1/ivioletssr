@@ -9,10 +9,13 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import NextLink from "next/link";
 import React from "react";
-import { introContent, type IntroPill } from "components/home/constant";
+import { type HomePageConstants, type IntroPill } from "constant/home";
+import { localizePathname, type SupportedLocale } from "constant/locale";
 import { introSx, sharedSx } from "components/home/styles";
 
 type IntroProps = {
+  locale: SupportedLocale;
+  introContent: HomePageConstants["introContent"];
   intro: string;
   pills: IntroPill[];
 };
@@ -30,7 +33,7 @@ const renderPillIcon = (icon: IntroPill["icon"]) => {
   }
 };
 
-export const Intro = ({ intro, pills }: IntroProps) => (
+export const Intro = ({ locale, introContent, intro, pills }: IntroProps) => (
   <Box component="section" sx={introSx.section}>
     <Box sx={sharedSx.sectionInner}>
       <Typography sx={sharedSx.sectionEyebrow}>{introContent.eyebrow}</Typography>
@@ -42,7 +45,7 @@ export const Intro = ({ intro, pills }: IntroProps) => (
         <Box sx={introSx.imageCard}>
           <Image
             src={introContent.imageSrc}
-            alt="iViolet team introduction"
+            alt={introContent.imageAlt}
             fill
             sizes="(max-width: 900px) 100vw, 440px"
             style={introSx.image as React.CSSProperties}
@@ -56,7 +59,7 @@ export const Intro = ({ intro, pills }: IntroProps) => (
               <Link
                 component={NextLink}
                 key={item.label}
-                href={item.href}
+                href={localizePathname(item.href, locale)}
                 underline="none"
                 sx={introSx.pillLink}
               >

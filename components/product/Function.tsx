@@ -8,14 +8,19 @@ export type FunctionDataType = {
 };
 
 type FunctionProps = {
+  functionEyebrow: string;
   sectionTitle: string;
   functionDataArray: FunctionDataType[];
 };
 
-export const Function = ({ sectionTitle, functionDataArray }: FunctionProps) => {
+export const Function = ({
+  functionEyebrow,
+  sectionTitle,
+  functionDataArray,
+}: FunctionProps) => {
   return (
     <Box sx={productFunctionSx.section}>
-      <Typography sx={productFunctionSx.eyebrow}>功能模块</Typography>
+      <Typography sx={productFunctionSx.eyebrow}>{functionEyebrow}</Typography>
       <Typography component="h2" sx={productFunctionSx.title}>
         {sectionTitle}
       </Typography>

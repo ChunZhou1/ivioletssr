@@ -8,10 +8,14 @@ import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import React from "react";
-import { contactContent } from "components/home/constant";
+import { type HomePageConstants } from "constant/home";
 import { contactSx, sharedSx } from "components/home/styles";
 
-export const Contact = () => (
+type ContactProps = {
+  contactContent: HomePageConstants["contactContent"];
+};
+
+export const Contact = ({ contactContent }: ContactProps) => (
   <Box component="section" sx={contactSx.section}>
     <Box sx={sharedSx.sectionInner}>
       <Typography sx={sharedSx.sectionEyebrow}>{contactContent.eyebrow}</Typography>
@@ -30,17 +34,17 @@ export const Contact = () => (
             sx={contactSx.infoRow}
           >
             <PlaceRoundedIcon sx={contactSx.infoIcon} />
-            <span>Address: 29 Singer Court, Toronto</span>
+            <span>{contactContent.addressLabel}: 29 Singer Court, Toronto</span>
           </Link>
 
           <Link href="mailto:ivioletca@gmail.com" underline="none" sx={contactSx.infoRow}>
             <MailOutlineRoundedIcon sx={contactSx.infoIcon} />
-            <span>Email: ivioletca@gmail.com</span>
+            <span>{contactContent.emailLabel}: ivioletca@gmail.com</span>
           </Link>
 
           <Link href="tel:+14372314578" underline="none" sx={contactSx.infoRow}>
             <LocalPhoneOutlinedIcon sx={contactSx.infoIcon} />
-            <span>Tel: +1 437 231 4578</span>
+            <span>{contactContent.telLabel}: +1 437 231 4578</span>
           </Link>
         </Box>
 
@@ -48,7 +52,7 @@ export const Contact = () => (
           <Box sx={contactSx.consultImage}>
             <Image
               src={contactContent.consultImageSrc}
-              alt="咨询服务"
+              alt={contactContent.consultImageAlt}
               fill
               sizes="(max-width: 1200px) 100vw, 430px"
               style={contactSx.consultImageItem as React.CSSProperties}

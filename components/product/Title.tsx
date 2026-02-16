@@ -9,8 +9,16 @@ export type TitleProps = {
   title2: string;
   titlePic: string;
   consultHref: string;
+  consultButtonText: string;
 };
-export const Title = ({ heroTag, title1, title2, titlePic, consultHref }: TitleProps) => {
+export const Title = ({
+  heroTag,
+  title1,
+  title2,
+  titlePic,
+  consultHref,
+  consultButtonText,
+}: TitleProps) => {
   const heroCtaSx = {
     ...(consultButtonSx as Record<string, unknown>),
     ...(productHeroSx.ctaButton as Record<string, unknown>),
@@ -26,7 +34,7 @@ export const Title = ({ heroTag, title1, title2, titlePic, consultHref }: TitleP
         <Typography sx={productHeroSx.desc}>{title2}</Typography>
         <Box sx={productHeroSx.ctaWrap}>
           <Button component="a" href={consultHref} sx={heroCtaSx}>
-            立即邮件咨询
+            {consultButtonText}
           </Button>
         </Box>
       </Box>

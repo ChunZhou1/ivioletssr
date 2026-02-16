@@ -11,15 +11,23 @@ export type CharactDataType = {
 };
 
 type CharactType = {
+  featureEyebrow: string;
+  consultButtonText: string;
   sectionTitle: string;
   charactDataArray: CharactDataType[];
   consultHref: string;
 };
 
-export const Charact = ({ sectionTitle, charactDataArray, consultHref }: CharactType) => {
+export const Charact = ({
+  featureEyebrow,
+  consultButtonText,
+  sectionTitle,
+  charactDataArray,
+  consultHref,
+}: CharactType) => {
   return (
     <Box sx={productFeatureSx.section}>
-      <Typography sx={productFeatureSx.eyebrow}>核心特点</Typography>
+      <Typography sx={productFeatureSx.eyebrow}>{featureEyebrow}</Typography>
       <Typography component="h2" sx={productFeatureSx.title}>
         {sectionTitle}
       </Typography>
@@ -36,7 +44,7 @@ export const Charact = ({ sectionTitle, charactDataArray, consultHref }: Charact
       </Box>
       <Box sx={productFeatureSx.ctaWrap}>
         <Button component="a" href={consultHref} sx={consultButtonSx}>
-          立即邮件咨询
+          {consultButtonText}
         </Button>
       </Box>
     </Box>

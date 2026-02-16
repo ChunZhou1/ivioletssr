@@ -9,15 +9,26 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import React from "react";
-import { heroContent, type HomeThumbnail } from "components/home/constant";
+import { type HomePageConstants, type HomeThumbnail } from "constant/home";
+import { type SupportedLocale } from "constant/locale";
+import { LanguageSwitcher } from "components/common/LanguageSwitcher";
 import { headerSx, sharedSx } from "components/home/styles";
 
 type HeaderProps = {
+  locale: SupportedLocale;
   mainBannerSrc: string;
   thumbnails: HomeThumbnail[];
+  headerContent: HomePageConstants["headerContent"];
+  heroContent: HomePageConstants["heroContent"];
 };
 
-export const Header = ({ thumbnails, mainBannerSrc }: HeaderProps) => (
+export const Header = ({
+  locale,
+  thumbnails,
+  mainBannerSrc,
+  headerContent,
+  heroContent,
+}: HeaderProps) => (
   <Box component="section" sx={headerSx.section}>
     <Box sx={sharedSx.sectionInner}>
       <Stack sx={headerSx.topBar}>
@@ -30,7 +41,7 @@ export const Header = ({ thumbnails, mainBannerSrc }: HeaderProps) => (
             <AutoAwesomeRoundedIcon sx={headerSx.logoSpark} />
           </Box>
           <Typography component="span" sx={headerSx.brandText}>
-            iViolet Technology
+            {headerContent.brandText}
           </Typography>
         </Stack>
 
@@ -43,13 +54,14 @@ export const Header = ({ thumbnails, mainBannerSrc }: HeaderProps) => (
             <LocalPhoneOutlinedIcon sx={headerSx.topIcon} />
             <span>+1 437 231 4578</span>
           </Link>
+          <LanguageSwitcher locale={locale} />
         </Box>
       </Stack>
 
       <Box sx={headerSx.bannerCard}>
         <Image
           src={mainBannerSrc}
-          alt="iViolet hero banner"
+          alt={headerContent.bannerAlt}
           fill
           priority
           sizes="(max-width: 900px) 100vw, 1296px"
